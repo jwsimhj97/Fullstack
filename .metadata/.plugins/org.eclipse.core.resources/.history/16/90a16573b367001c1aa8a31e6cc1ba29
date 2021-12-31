@@ -1,0 +1,65 @@
+package com.hi;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Ex12_t {
+	public static void main(String[] args){
+		// 학생성적관리프로그램 (ver 0.7.0)
+		// 껏다켜도 입력한 데이터 남아있게
+		Scanner sc=new Scanner(System.in);
+		System.out.println("학생성적관리프로그램 (ver 0.7.0");
+		String input=null;
+		String data="";
+		// 읽어오기
+		
+		while(true){
+			System.out.print("1.보기 2.입력 0.종료 >");
+			input=sc.nextLine();
+			if(input.equals("0")){break;}
+			if(input.equals("1")){
+				System.out.println("-----------------------------");
+				System.out.println("학번\t국어\t영어\t수학");
+				System.out.println("-----------------------------");
+				System.out.print(data);
+				System.out.println("-----------------------------");
+			}else if(input.equals("2")){
+				System.out.print("학번  >");
+				input=sc.nextLine()+"\t";
+				System.out.print("국어  >");
+				input+=sc.nextLine()+"\t";
+				System.out.print("영어  >");
+				input+=sc.nextLine()+"\t";
+				System.out.print("수학  >");
+				input+=sc.nextLine()+"\n";
+				
+				data+=input;
+			} 
+		}
+		// 저장
+		File file=new File("data.bin");
+		if(!file.exists()){
+			try{
+				file.createNewFile();
+			}catch(IOException e){
+				e.printStackTrace();
+			}
+		}
+		
+		try{
+			FileOutputStream fos=new FileOutputStream(file);
+			fos.write(data.getBytes());
+			fos.flush();
+			fos.close();
+//			fos.write();
+		}catch(FileNotFoundException e){
+			e.printStackTrace();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+
+}

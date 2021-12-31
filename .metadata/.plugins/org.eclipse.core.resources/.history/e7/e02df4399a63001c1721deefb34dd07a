@@ -1,0 +1,12 @@
+package com.hi;
+
+import java.util.Date;
+
+// Class Date
+public class Ex03 {
+
+	public static void main(String[] args) {
+		java.util.Date cal=new Date();
+	}
+
+}

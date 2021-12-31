@@ -1,0 +1,27 @@
+package com.hi;
+
+import java.util.ArrayList;
+// Class ArrayList
+public class Ex05 {
+
+	public static void main(String[] args) {
+		java.util.ArrayList list=new ArrayList();	// ArrayList 기본 10 / 변경 -> ArrayList(int initialCapacity) - 값을 변형하여 테스트하여 출력
+		list.add("첫번째");
+		list.add("두번째");
+		list.add(0,"세번째");
+		list.add("네번째");
+		
+//		System.out.println(list.size());	// size() - list갯수가 몇개인지
+		
+//		System.out.println(list.get(0));	// get() - list의 ()째에 무슨내용이 있는지
+//		System.out.println(list.get(1));
+//		System.out.println(list.get(2));
+//		System.out.println(list.get(3));
+		
+		for(int i=0; i<list.size(); i++){
+			Object msg=list.get(i);		// String msg=(String)list.get(i);
+			System.out.println(msg);
+		}
+	}
+
+}

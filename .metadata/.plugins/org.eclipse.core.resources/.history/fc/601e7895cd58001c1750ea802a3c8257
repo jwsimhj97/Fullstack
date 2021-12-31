@@ -1,0 +1,26 @@
+package com.hi;
+
+public class Ex09h1 {
+
+	public static void main(String[] args) {
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		String title="학생성적관리프로그램(ver 0.2.0)";
+		System.out.println(title);
+		
+		String[] subject={"국어","영어","수학"};
+		String su;
+		int input;
+		
+		boolean boo = true;
+		while(boo){
+			if(input==1){
+				System.out.println("1.입력 2.출력 0.종료 >");
+				su=Integer.parseInt(nextLine());
+			}
+//			for(int i=0; i<3; i++){
+//				
+//			}
+		}
+	}
+
+}

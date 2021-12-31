@@ -1,0 +1,21 @@
+package com.hi;
+
+import java.awt.Frame;
+import java.awt.Panel;
+
+public class Ex11 extends Frame{
+	
+	public Ex11(){
+		Panel p=new Panel();
+		p.addMouseMotionListener(this);
+		
+		add(p);
+		setBounds(100,100,400,300);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ex11();
+	}
+
+}

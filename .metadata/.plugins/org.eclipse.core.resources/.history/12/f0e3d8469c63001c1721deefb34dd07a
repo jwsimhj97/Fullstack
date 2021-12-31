@@ -1,0 +1,11 @@
+package com.hi;
+
+// (java text)Class DateFormat
+public class Ex04 {
+
+	public static void main(String[] args) {
+		// 날짜 format변환
+		Date cal=new Date();
+	}
+
+}

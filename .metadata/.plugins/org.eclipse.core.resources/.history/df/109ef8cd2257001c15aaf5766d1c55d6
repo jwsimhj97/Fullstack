@@ -1,0 +1,22 @@
+package com.room802;
+
+public class Ex11 {
+
+	public static void main(String[] args) {
+		// while문으로 구구단만들기
+//		int su=1;
+//		while(su<5){
+//			System.out.println("반복"+su);
+//			su++;
+//		}
+		for(int i=1; i<10; i++){
+			System.out.println("2x"+i+"="+(i*2));
+		}
+		
+//		int su=1;
+//		while(su<2){
+//			System.out.println();
+//		}
+	}
+
+}

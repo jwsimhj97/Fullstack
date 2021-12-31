@@ -1,0 +1,19 @@
+package com.hi;
+
+public class Ex10 {
+
+	public static void main(String[] args) {
+		// Set = 집합의 개념
+		java.util.Set set=new java.util.HashSet();
+		set.add("첫번째");
+		set.add("두번째");
+		set.add("세번째");
+		set.add("네번째");
+		
+		java.util.Iterator ite=set.iterator();
+		while(ite.hasNext()){		// hasNext - 뒤에 알려줄 정보가 있으면 true 없으면 false
+			System.out.println(ite.next());
+		}
+	}
+
+}

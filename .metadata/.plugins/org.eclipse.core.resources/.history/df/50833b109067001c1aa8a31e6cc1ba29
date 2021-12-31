@@ -1,0 +1,13 @@
+package com.hi;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Ex10 {
+
+	public static void main(String[] args) {
+		System.out.println("切积己利包府橇肺弊伐 (ver 0.5.1)");
+		ArrayList<HashMap<String,String>> data=new ArrayList<>();
+	}
+
+}

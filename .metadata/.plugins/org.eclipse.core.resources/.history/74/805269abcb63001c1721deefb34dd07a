@@ -1,0 +1,20 @@
+package com.hi;
+
+public class Ex11 {
+	
+	class Ele{
+		int val;
+		public Ele(int val){
+			this.val=val;
+		}
+		public String toString(){
+			return ""+val;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

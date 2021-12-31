@@ -1,0 +1,25 @@
+package com.hi;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Ex11 {
+	
+	static class Ele{
+		int val;
+		public Ele(int val){
+			this.val=val;
+		}
+		public String toString(){
+			return ""+val;
+		}
+	}
+
+	public static void main(String[] args) {
+		Ele ele1=new Ele(1111);
+//		System.out.println(ele1);
+		Set set=new TreeSet();
+		set.add(ele1);
+	}
+
+}

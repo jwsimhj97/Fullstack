@@ -1,0 +1,12 @@
+package com.hi;
+
+import java.util.Calendar;
+
+// 날짜 Class Calendar
+public class Ex01 {
+
+	public static void main(String[] args) {
+		java.util.Calendar cal=Calendar.getInstance();	// getInstance - 메소드를 통해 한번만 생성된 객체를 가져온다.
+	}
+
+}

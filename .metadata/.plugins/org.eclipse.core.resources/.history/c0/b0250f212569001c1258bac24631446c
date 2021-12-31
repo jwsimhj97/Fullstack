@@ -1,0 +1,28 @@
+package com.hi;
+
+import java.awt.Frame;
+import java.awt.Menu;
+import java.awt.MenuBar;
+
+public class Ex06 extends Frame{
+	
+	public Ex06(){
+		setTitle("Á¦¸ñ");
+		
+		Menu mn1=new Menu();
+		Menu mn2=new Menu("Help");
+		mn1.setLabel("File");
+		MenuBar mb=new MenuBar();
+		mb.add(mn1);
+		mb.add(mn2);
+		setMenuBar(mb);
+		
+		setBounds(100,100,600,500);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ex06();
+	}
+
+}

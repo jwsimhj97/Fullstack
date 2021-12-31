@@ -1,0 +1,16 @@
+package com.hi;
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		// 로또번호생성기 (ver 0.3.0)
+		java.util.Set set=new java.util.TreeSet();
+		int ran;		
+		
+		for(int i=0; i<6; i++){
+			ran=(int)(Math.random()*45)+1;
+		}
+		set.add(ran);
+	}
+
+}

@@ -1,0 +1,16 @@
+/* HEADER */
+header{padding: 20px 0;}
+.hd_top {overflow: hidden;}
+.hd_top .logo{float: left; display: inline-block; position: relative; padding-left: 200px; text-indent: -9999px; height: 75px;}
+/* .hd_top .logo img {width: 200px;} */ 
+.hd_top .logo::before {position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 200px; height: 75px; content: ''; background: url(../img/logo/logo200x75.png)no-repeat; background-size: contain;}
+.hd_top .menu{float: right; display: inline-block; padding-top: 35px;}
+.hd_top .menu ul{overflow: hidden;}
+.hd_top .menu ul li{float: left; margin: 0 20px;}
+.hd_top .menu ul li a{font-size: 16px; display: block;}
+
+/* CONTENTS */
+.container{margin: 0 auto; width: 1200px;}
+
+/* FOOTER */
+footer{}

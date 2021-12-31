@@ -1,0 +1,11 @@
+package com.hi;
+
+import java.awt.Frame;
+
+public class Ex09 extends Frame{
+
+	public static void main(String[] args) {
+		
+	}
+
+}

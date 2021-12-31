@@ -1,0 +1,24 @@
+package com.hi;
+
+import java.awt.Frame;
+import java.awt.Panel;
+import java.awt.TextField;
+
+public class Ex02 extends Frame{
+
+	public Ex02(){
+		Panel p=new Panel();
+		
+		tf=new TextField(15);
+		p.add(tf);
+		
+		add(p);
+		setBounds(100,100,600,400);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new Ex02();
+	}
+
+}

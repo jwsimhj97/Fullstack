@@ -1,0 +1,22 @@
+package com.hi;
+
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+// (java text)Class DateFormat
+public class Ex04 {
+
+	public static void main(String[] args) {
+		// 날짜 format변환
+		Date cal=new Date();
+//		java.text.DateFormat df=DateFormat.getDateInstance();
+		java.text.DateFormat df=DateFormat.getDateInstance(DateFormat.FULL, Locale.KOREA); // SHORT, MEDIUM, LONG, FULL
+		String msg=df.format(cal);
+		System.out.println(msg);
+		System.out.println("-------------------------------");
+		java.text.SimpleDateFormat sdf=new SimpleDateFormat();
+		sdf.format(cal);
+	}
+
+}

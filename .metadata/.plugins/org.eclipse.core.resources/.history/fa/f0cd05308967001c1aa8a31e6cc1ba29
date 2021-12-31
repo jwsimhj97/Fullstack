@@ -1,0 +1,21 @@
+package com.hi;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		File origin=new File("coin.jpg");
+		File copy=new File("copy.jpg");
+		
+		try {
+			new FileInputStream(origin);
+			new FileOutputStream(copy);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

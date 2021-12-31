@@ -1,0 +1,19 @@
+package com.hi;
+
+public class Ex08 {
+	public static int su1=0;
+	public int su2=0;
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void func01(){
+		
+	}
+	
+	public void func02(){
+		
+	}
+
+}

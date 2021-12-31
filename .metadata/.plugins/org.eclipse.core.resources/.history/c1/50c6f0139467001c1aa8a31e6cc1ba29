@@ -1,0 +1,18 @@
+package com.hi;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Ex11 {
+
+	public static void main(String[] args) {
+		System.out.println("切积己利包府橇肺弊伐 (ver 0.5.1)");
+		HashMap<String,String> data=new HashMap<>();
+		Scanner sc=new Scanner(System.in);
+		String input=null;
+		
+		while(true){}
+	}
+
+}

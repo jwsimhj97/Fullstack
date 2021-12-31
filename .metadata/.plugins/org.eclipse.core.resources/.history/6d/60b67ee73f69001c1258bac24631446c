@@ -1,0 +1,15 @@
+package com.hi;
+
+import java.awt.Frame;
+
+public class Ex12 extends Frame{
+	
+	public Ex12(){
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ex12();
+	}
+
+}

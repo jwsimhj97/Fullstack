@@ -1,0 +1,12 @@
+package com.hi;
+
+public class Ex07 {
+	public static int a=2222;
+
+	public static void main(String[] args) {
+		// 지역 > 전역
+		int a=1111;
+		System.out.println(a);
+	}
+
+}

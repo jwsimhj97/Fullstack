@@ -1,0 +1,21 @@
+package com.hi;
+
+import java.util.LinkedList;
+
+public class Ex08 {
+
+	public static void main(String[] args) {
+		// LIFO (last-in-first-out).
+		java.util.Queue que=new LinkedList();
+		que.offer("첫번째");
+		que.offer("두번째");
+		que.offer("세번째");
+		que.offer("네번째");
+		
+		System.out.println(que.peek());		// peek - 
+		que.poll();
+		System.out.println(que.peek());
+		System.out.println(que.peek());
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.hi;
+
+import java.io.File;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		File origin=new File("coin.jpg");
+		File copy=new File("copy.jpg");
+	}
+
+}

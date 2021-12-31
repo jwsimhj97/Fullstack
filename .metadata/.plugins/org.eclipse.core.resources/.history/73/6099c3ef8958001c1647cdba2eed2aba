@@ -1,0 +1,26 @@
+package com.hi;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		int me,com;
+		me=1;
+		com=1;
+		System.out.println("게임을 시작하겠습니다");
+		
+		System.out.print("1.가위 2.바위 3.보 >");
+		System.out.println("me:"+"가위"+",com:"+"가위");
+
+		System.out.print("1.가위 2.바위 3.보 >");
+		System.out.println("me:"+"가위"+",com:"+"가위");
+
+		System.out.print("1.가위 2.바위 3.보 >");
+		System.out.println("me:"+"가위"+",com:"+"가위");
+		
+		System.out.println("0승3무0패");
+		System.out.println("이용해주셔서 감사합니다");
+	}
+
+}

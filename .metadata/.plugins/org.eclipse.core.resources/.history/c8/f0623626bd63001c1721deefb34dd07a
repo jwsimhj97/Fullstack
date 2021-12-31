@@ -1,0 +1,30 @@
+package com.hi;
+
+import java.util.LinkedList;
+
+public class Ex08 {
+
+	public static void main(String[] args) {
+		// LIFO (last-in-first-out).
+		java.util.Queue que=new LinkedList();
+		que.offer("첫번째");
+		que.offer("두번째");
+		que.offer("세번째");
+		que.offer("네번째");
+		
+		// Queue 구조 ->  선입선출방식  (정보를 넣는다) => |4 3 2 1| => (정보를 뺀다)
+//		System.out.println(que.peek());		// peek - 빼낼 정보의 첫내용 	결과: 첫번째
+//		que.poll();							// poll - 정보를 뺀다				  첫번째 빼기
+//		System.out.println(que.peek());		// peek - 빼낼 정보의 첫내용	결과: 두번째
+//		que.poll();							// poll - 정보를 뺀다				  두번째 빼기
+		
+		while(true){
+			if(que.peek()==null){break;}
+			System.out.println(que.peek());
+			que.poll();
+		}
+		
+		System.out.println(que.poll());
+	}
+
+}

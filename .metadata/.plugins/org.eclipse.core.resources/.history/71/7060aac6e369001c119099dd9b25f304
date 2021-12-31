@@ -1,0 +1,47 @@
+package com.hi;
+
+import java.awt.Frame;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+class Lec05 implements WindowListener{
+
+	@Override
+	public void windowOpened(WindowEvent e) {}
+
+	@Override
+	public void windowClosing(WindowEvent e) {}
+
+	@Override
+	public void windowClosed(WindowEvent e) {}
+
+	@Override
+	public void windowIconified(WindowEvent e) {}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {}
+
+	@Override
+	public void windowActivated(WindowEvent e) {}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {}	
+}
+
+class Lec55 extends Lec05{
+	
+}
+
+public class Ex05 extends Frame{
+
+	public Ex05(){
+		
+		setBounds(100, 100, 500, 300);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new Ex05();
+	}
+
+}

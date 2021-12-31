@@ -1,0 +1,12 @@
+package com.hi;
+
+// ArrayList
+public class Ex05 {
+
+	public static void main(String[] args) {
+		java.util.ArrayList list=new ArrayList();
+		list.add("첫번째");
+		list.add("두번째")
+	}
+
+}

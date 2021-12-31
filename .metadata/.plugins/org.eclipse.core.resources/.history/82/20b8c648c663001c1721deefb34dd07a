@@ -1,0 +1,29 @@
+package com.hi;
+
+public class Ex10 {
+
+	public static void main(String[] args) {
+		// Set = 집합의 개념
+		java.util.Set set=new java.util.HashSet();
+//		set.add("첫번째");
+//		set.add("두번째");
+//		set.add("세번째");
+//		set.add("네번째");
+		
+		set.add(1111);
+		set.add(2222);
+		set.add(1111);
+		set.add(3333);
+		
+		java.util.Iterator ite=set.iterator();	// iterator - 반복자. 배열이나 그와 유사한 자료 구조의 내부의 요소를 순회(traversing)하는 객체
+		while(ite.hasNext()){					// hasNext - 뒤에 알려줄 정보가 있으면 true 없으면 false
+			System.out.println(ite.next());
+		}
+		
+//		java.util.Iterator ite2=set.iterator();
+//		while(ite2.hasNext()){
+//			System.out.println(ite2.next());
+//		}
+	}
+
+}
