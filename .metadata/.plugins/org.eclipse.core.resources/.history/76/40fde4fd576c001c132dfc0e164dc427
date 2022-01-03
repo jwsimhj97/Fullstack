@@ -1,0 +1,29 @@
+package com.hi;
+
+import java.awt.Frame;
+import java.awt.Label;
+
+public class Ex10_t extends Frame{
+	static Label la;
+	
+	public Ex10_t(){
+		la=new Label();
+		
+		add(la);
+		setBounds(100,100,200,100);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		Ex10_t me=new Ex10_t();
+		for(int i=60; i>=0; i--){
+			la.setText(""+i+"√ ");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.hi;
+
+public class Ex01 extends Thread{
+	
+
+	public static void main(String[] args) {
+		Ex01 me=new Ex01();
+		me.start();
+	}
+	@Override
+	public void run() {
+		String name=getName();	// thread의 이름을 가져온다
+		System.out.println(name+"새로운 쓰레드로 하고자하는 일");
+	}
+
+}

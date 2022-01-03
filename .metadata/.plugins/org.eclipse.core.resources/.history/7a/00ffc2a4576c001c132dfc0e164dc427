@@ -1,0 +1,20 @@
+package com.hi;
+
+import java.awt.Frame;
+
+public class Ex10_t extends Frame{
+	static Label();
+	
+	public Ex10_t(){
+		la=new Label();
+		add(la);
+		setBounds(100,100,200,100);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

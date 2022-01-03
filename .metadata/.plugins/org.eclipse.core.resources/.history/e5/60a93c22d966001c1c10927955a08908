@@ -1,9 +1,0 @@
-package com.hi;
-
-public class Ex05 extends java.lang.Thread{
-
-	public static void main(String[] args) {
-		
-	}
-
-}

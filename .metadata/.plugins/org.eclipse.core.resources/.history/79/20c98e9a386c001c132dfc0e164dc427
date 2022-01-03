@@ -1,0 +1,20 @@
+package com.hi;
+
+import java.awt.Frame;
+import java.awt.Label;
+
+public class Ex07 extends Frame{
+	Label la;
+	
+	public Ex07(){
+		la=new Label();
+		
+		setBounds(100,100,200,100);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ex07();
+	}
+
+}
