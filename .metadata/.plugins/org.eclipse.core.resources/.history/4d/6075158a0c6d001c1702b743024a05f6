@@ -1,0 +1,12 @@
+package com.hi;
+
+import java.io.File;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		// 문자열 스트림
+		File file=new File("test01.txt");
+	}
+
+}

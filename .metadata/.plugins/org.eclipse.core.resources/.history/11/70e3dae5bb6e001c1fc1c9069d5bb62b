@@ -1,0 +1,14 @@
+package com.hi.step02;
+
+import java.io.*;
+import java.net.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Socket sock=null;
+		InputStream is=null;
+		OutputStream os=null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package soc.pj;
+//글쓰기창
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class Sopj02  extends Frame implements ActionListener{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+}

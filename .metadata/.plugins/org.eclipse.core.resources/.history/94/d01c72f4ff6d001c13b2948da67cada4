@@ -1,0 +1,13 @@
+package com.hi;
+// Ελ½Ε
+import java.net.*;
+
+public class Ex16 {
+
+	public static void main(String[] args) {
+		InetAddress net=null;
+		
+		net=InetAddress.getByName("https://naver.com");
+	}
+
+}

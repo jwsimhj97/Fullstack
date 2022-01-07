@@ -1,0 +1,29 @@
+package com.hi;
+
+import java.io.*;
+
+public class Ex05 {
+
+	public static void main(String[] args) {
+		// byteStream -> StringStream
+		OutputStream os=null;
+		OutputStreamWriter osw=null;
+		
+		try {
+			os=new FileOutputStream("test05.txt");
+			osw=new OutputStreamWriter(os);
+			
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				osw.close();
+				os.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

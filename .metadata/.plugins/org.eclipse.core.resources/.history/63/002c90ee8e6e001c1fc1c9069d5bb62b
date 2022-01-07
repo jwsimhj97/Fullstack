@@ -1,0 +1,23 @@
+package com.hi;
+
+import java.net.*;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// 프로토콜://도메인:포트/패~~스?쿼리&스트링#플래그
+		URI url=null;
+		try {
+			url=new URI("https://223.130.200.104");
+			System.out.println(url.getScheme());	// 프로토콜
+			System.out.println(url.getHost());		// 도메인 or IP
+			System.out.println(url.getPort());		// 포트 http(80), https(443)
+			System.out.println(url.getPath());		// 패스
+			System.out.println(url.getQuery());		// 쿼리스트링
+			System.out.println(url.getFragment());	// 
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

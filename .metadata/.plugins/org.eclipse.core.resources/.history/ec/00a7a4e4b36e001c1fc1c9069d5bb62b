@@ -1,0 +1,11 @@
+package com.hi.step01;
+
+import java.net.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		Socket sock=new Socket(ip, port);
+	}
+
+}

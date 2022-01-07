@@ -1,0 +1,17 @@
+package com.hi;
+// Ελ½Ε
+import java.net.*;
+
+public class Ex16 {
+
+	public static void main(String[] args) {
+		InetAddress net=null;
+		
+		try {
+			net=InetAddress.getByName("https://naver.com");
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

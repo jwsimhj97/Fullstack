@@ -1,0 +1,26 @@
+package com.hi;
+
+public class Ex10 {
+
+	static int tot;
+	int startnum;
+	int endnum;
+	
+	public void hap(int a,int b){
+		startnum=a;
+		endnum=b;
+		
+		for(int i=startnum; i<=endnum; i++){
+			tot+=i;
+		}
+	}
+	
+	public static void main(String[] args) {
+		Ex10 me=new Ex10();
+//		me.hap(1, 100);
+//		System.out.println(me.tot);
+		Thread thr1=new Thread();
+		Thread thr2=new Thread();
+	}
+
+}

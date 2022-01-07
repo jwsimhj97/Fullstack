@@ -1,0 +1,29 @@
+package com.hi;
+
+import java.io.*;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+		InputStream is=null;
+		Reader isr=null;
+		BufferedReader br=null;
+		
+		try {
+			is=new FileInputStream("test05.txt");
+			isr=new InputStreamReader(is);
+			br=new BufferedReader(isr);
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				isr.close();
+				is.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

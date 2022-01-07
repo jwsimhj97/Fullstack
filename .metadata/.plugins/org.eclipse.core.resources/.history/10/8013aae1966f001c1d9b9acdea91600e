@@ -1,0 +1,11 @@
+package soc.pj;
+// 글쓰기 창
+
+public class Sopj02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

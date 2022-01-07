@@ -1,0 +1,26 @@
+package com.hi;
+
+import java.io.*;
+import java.net.*;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		URL url=null;
+		InputStream is=null;
+		
+		try {
+			url=new URL("https://google.com");
+			URLConnection conn=url.openConnection();
+			is=conn.getInputStream();
+			
+			
+			is.close();
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

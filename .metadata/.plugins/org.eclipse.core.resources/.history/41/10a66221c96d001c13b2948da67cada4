@@ -1,0 +1,18 @@
+package com.hi;
+
+import java.io.*;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		OutputStream os=null;
+		
+		try {
+			os=new FileOutputStream("test02.bin");
+			os.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

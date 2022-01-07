@@ -1,0 +1,11 @@
+package com.hi;
+
+import java.io.PrintStream;
+
+public class Ex08 {
+
+	public static void main(String[] args) {
+		PrintStream ps=System.out;
+	}
+
+}

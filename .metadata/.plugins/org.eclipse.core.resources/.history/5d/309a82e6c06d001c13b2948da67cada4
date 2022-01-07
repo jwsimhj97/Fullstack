@@ -1,0 +1,26 @@
+package com.hi;
+
+import java.io.*;	// *
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		FileOutputStream fos=null;
+		ObjectOutputStream oos=null;
+		try {
+			fos=new FileOutputStream("test01.bin");
+			oos=new ObjectOutputStream(fos);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				fos.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

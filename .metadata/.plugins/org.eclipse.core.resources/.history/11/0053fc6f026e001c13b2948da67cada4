@@ -1,0 +1,23 @@
+package com.hi;
+// Ελ½Ε
+import java.net.*;
+import java.util.Arrays;
+
+public class Ex16 {
+
+	public static void main(String[] args) {
+		InetAddress net=null;
+		
+		try {
+			net=InetAddress.getByName("naver.com");
+			
+			System.out.println(net.getHostName());
+			System.out.println(net.getHostAddress());
+			byte[] arr1=net.getAddress();
+			System.out.println(Arrays.toString(arr1));
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.hi;
+
+import java.io.*;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		InputStream inn=System.in;
+	}
+
+}

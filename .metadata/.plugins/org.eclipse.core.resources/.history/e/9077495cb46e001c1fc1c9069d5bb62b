@@ -1,0 +1,28 @@
+package com.hi.step01;
+
+import java.io.IOException;
+import java.net.*;
+
+public class Client {
+
+	public static void main(String[] args) {
+		String ip="127.0.0.1";
+		int port=5000;	//
+		Socket sock=null;
+		try {
+			sock=new Socket(ip, port);
+			System.out.println("접속요청했습니다");
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				sock.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

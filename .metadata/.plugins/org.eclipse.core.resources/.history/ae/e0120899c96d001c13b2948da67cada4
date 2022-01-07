@@ -1,0 +1,27 @@
+package com.hi;
+
+import java.io.*;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		InputStream is=null;
+		ObjectInputStream ois=null;
+		
+		try {
+			is=new FileInputStream("test02.bin");
+			ois=new ObjectInputStream(is);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				is.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.hi;
+
+public class Ex10 {
+
+	int tot;
+	int startnum;
+	int endnum;
+	
+	public static void main(String[] args) {
+		System.out.println();
+	}
+
+}
