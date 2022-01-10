@@ -1,0 +1,25 @@
+package soc.pj;
+
+import java.awt.*;
+
+public class Sopj03 extends Frame{
+
+	TextArea ta;
+	
+	public void ListContBox(){	// 게시글 list별 내용
+		Panel p=new Panel();
+		
+		ta=new TextArea() ;
+		ta.append("ddddddd");
+		p.add(ta);
+		
+		add(p);
+		setBounds(100, 100, 800, 600);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Sopj03();
+	}
+
+}
