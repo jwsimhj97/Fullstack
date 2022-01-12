@@ -4,6 +4,8 @@ package soc.pj;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -12,9 +14,10 @@ import javax.swing.JPasswordField;
 public class Sopj02 extends Frame implements ActionListener{
 
 	MenuItem mi1,mi2,mi3,mi4,mi5;
-	TextField tfId,tfPw,taTitle;
+	static TextField tfId,tfPw,taTitle;
 	TextArea ta;
 	String title="제목없음";
+	
 	
 	public Sopj02(){
 		Panel p=new Panel();
@@ -123,7 +126,7 @@ public class Sopj02 extends Frame implements ActionListener{
 			this.setTitle(title);
 		}else if(obj==mi3){
 			System.out.println("저장");
-			title=taTitle.getText();
+			title=taTitle.getText();	// 제목
 			this.setTitle(title);
 			
 			File file=new File(".\\shareBox\\"+taTitle.getText());
@@ -133,15 +136,24 @@ public class Sopj02 extends Frame implements ActionListener{
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
-			}		
-
-			String msg=ta.getText();
+			}	
+			String idSt=tfId.getText();	// id
+			String idPw=tfPw.getText();	// pw
+			String msg=ta.getText();	// 내용
 			try {
 				FileOutputStream out=new java.io.FileOutputStream(file);
-				byte[] arr=msg.getBytes();
-				for(int i=0; i<arr.length; i++){
-					out.write(arr[i]);
-				}
+				byte[] arridSt=idSt.getBytes();
+				byte[] arridPw=idPw.getBytes();
+				byte[] arrMsg=msg.getBytes();
+				for(int i=0; i<arridSt.length; i++){
+					out.write(arridSt[i]);
+				};
+				for(int i=0; i<arridPw.length; i++){
+					out.write(arridPw[i]);
+				};
+				for(int i=0; i<arrMsg.length; i++){
+					out.write(arrMsg[i]);
+				};				
 				out.close();
 				System.out.println("작성완료");
 			} catch (FileNotFoundException e1) {

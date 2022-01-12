@@ -4,6 +4,12 @@ package soc.pj;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
 
 import javax.swing.*;
 
@@ -11,28 +17,73 @@ public class Sopj01 extends Frame implements ActionListener{
 	JButton writeBtn, listBtn;
 	Panel pCont,pContList;
 	
-	File dir = new File("D:\\javaWork\\socketProject1\\shareBox");
+	File dir = new File("D:\\javaWork\\socketProject1\\shareBox");	
 	File[] files = dir.listFiles();
 	JButton[] wrlist=new JButton[files.length];
 	JLabel[][] listLineLa;
 	int listLength=files.length;
-	
+	String listLng=Integer.toString(listLength);
+
+	Object obj="";	
 	
 	public void ListCont(){		// 게시글 list		
-//		[][4]
-		listLineLa=new JLabel[listLength][4]; // [파일갯수][4=no,제목,작성자,날짜]
-		System.out.println(pContList);
+		//////////////////////////////////////////////////
+//		java.util.List<Date> myList = new ArrayList<>();
+//		String pattern = "yyyy-MM-dd";
+//		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+////		myList.sort(c);
+//		for(int i=0; i<listLength; i++){			
+//			long lastModified = files[i].lastModified(); // date		
+//			Date lastModifiedDate = new Date( lastModified );
+//
+//			myList.add(new Date( lastModified ));
+//		}
+//		Collections.sort(myList, new Comparator<Date>(){
+//            @Override
+//            public int compare(Date o1, Date o2) {
+//                return o1.compareTo(o2);
+//            }
+//        });
+//        for(int i = 0; i < myList.size(); i++){
+//        	String alistNum=String.valueOf(i+1);	// list의 인덱스번호
+//			String alistTitle=files[i].getName();	// list의 주제
+//        	
+//			String alistWriter=null;
+//			String alistDate=simpleDateFormat.format(myList.get(i));	// list의 만든날짜
+//			
+//			System.out.println(alistNum+alistTitle+alistWriter+alistDate);
+//        }	
+		
+
+		//////////////////////////////////////////////////
+		listLineLa=new JLabel[listLength][4];
 		for(int i=0; i<listLineLa.length; i++) {
-			for(int j=0; j<listLineLa[i].length; j++) {
+			for(int j=0; j<listLineLa[i].length; j++) {				
 				listLineLa[i][j]=new JLabel("아");
+				
+				listLineLa[i][0]=new JLabel(String.valueOf(i+1));	// No. 부분
+				listLineLa[i][1]=new JLabel(files[i].getName());
+				listLineLa[i][2]=new JLabel("ddddd"); // Sopj02 - laId->tfId 
+				
+//				listLineLa[i][3]=new JLabel("라");			
+				String pattern = "yyyy-MM-dd";
+				SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+				long lastModified = files[i].lastModified(); // date		
+				Date lastModifiedDate = new Date( lastModified );
+				listLineLa[i][3]=new JLabel(simpleDateFormat.format( lastModifiedDate ));
+				
+
+				listLineLa[i][j].addMouseListener(new MouseAdapter() {
+		            @Override
+		            public void mouseClicked(MouseEvent e) {
+		            	obj=e.getSource();
+		            	
+		            	System.out.println("클릭");		
+		            }
+		        });
 				pContList.add(listLineLa[i][j]);
 			}
 		}
-//		for(int i=0; i<wrlist.length; i++){
-//			wrlist[i]=new JButton((i+1)+files[i].getName());
-//			wrlist[i].addActionListener(this);	
-//			pContList.add(wrlist[i]);		
-//		}
 		
 	}
 	
@@ -103,18 +154,19 @@ public class Sopj01 extends Frame implements ActionListener{
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {		
-		Object obj=e.getSource();
+	public void actionPerformed(ActionEvent e) {	
+		obj=e.getSource();
+		
 		if(obj==writeBtn){		// 글쓰기버튼
 			new Sopj02();
 		}		
 		
-		for(int i=0; i<wrlist.length; i++){	// 리스트별 버튼
-			if(obj==wrlist[i]){
-				Sopj03.listNum=i;
-				new Sopj03();
-			}
-		}
+//		for(int i=0; i<wrlist.length; i++){	// 리스트별 버튼
+//			if(obj==wrlist[i]){
+//				Sopj03.listNum=i;
+//				new Sopj03();
+//			}
+//		}
 	}
 
 }
