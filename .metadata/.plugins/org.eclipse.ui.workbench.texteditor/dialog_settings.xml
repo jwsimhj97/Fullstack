@@ -6,20 +6,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="SimpleDateFormat " key="selection"/>
+		<item value="pContList" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="pContList"/>
+			<item value="reader"/>
+			<item value="BufferedReader"/>
+			<item value="main"/>
+			<item value="listNum"/>
+			<item value="Sopj03"/>
 			<item value="SimpleDateFormat "/>
 			<item value="text"/>
-			<item value="TextField "/>
-			<item value="저장"/>
-			<item value="JButton"/>
-			<item value="JButton[]"/>
-			<item value="Dialog"/>
-			<item value="arraycopy"/>
 		</list>
 		<list key="replacehistory">
 			<item value="ran"/>
