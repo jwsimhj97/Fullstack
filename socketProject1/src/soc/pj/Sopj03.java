@@ -17,7 +17,10 @@ import javax.swing.border.Border;
 public class Sopj03 extends Frame implements ActionListener{
 	private JTextArea ta;
 	private TextField tfId, taTitle;
-	JTextField tfComt, deltfCoPw;
+	JTextField tfComt, deltfCoPw, tfCoId, tfCoPrId;
+	JPasswordField tfCoPw;
+	JTextArea coPrTa;
+	JPanel pComPr;
 	
 	File dir = new File("D:\\javaWork\\socketProject1\\shareBox");
 	File[] files = dir.listFiles();
@@ -127,90 +130,33 @@ public class Sopj03 extends Frame implements ActionListener{
     }
 
 	public void Comment(){	// 댓글등록
-//		coPrTa.setEditable(false);	// 내용 수정 불가
-		System.out.println("댓글등록 버튼입니다.");
-		
-		String commMsg=tfComt.getText();
-		System.out.println(commMsg);	
-		
-		
+//      저장할 댓글
+//      tfCoId - 아이디
+//      tfCoPw - 비번
+//      tfComt - 내용
+//      saveBtn - 등록버튼
+//      --------------
+//      출력할 댓글창
+//      tfCoPrId - 아이디
+//      coPrTa - 댓글내용출력
+//      coPrTa.setEditable(false);   // 내용 수정 불가
+      System.out.println("댓글등록 버튼입니다.");
+      
+      String commId=tfCoId.getText();   // tfCoId - 등록할 아이디
+      tfCoPrId.setText(commId);      // tfCoPrId - 등록받은 아이디
+      tfCoPrId.setEditable(false);
+      tfCoId.setText("");
+      
+      tfCoPw.setText("");      // 비번
+      
+      String commMsg=tfComt.getText();   // 내용
+      coPrTa.setText(commMsg);
+      tfComt.setText("");
+      coPrTa.setEditable(false);
 
-//		String msg=ta.getText();	// 내용
-//		String idtt="아이디 : ";
-//		String pwtt="비밀번호 : ";
-//		String fileNamett="제목 : ";
-//		String msgtt="내용 : ";
+      pComPr.setVisible(true);      
+
 		
-//		try {
-//			File file=new File(".\\shareBox\\"+taTitle.getText());
-//			System.out.println(file);
-//			if(!file.exists()){
-//				try {
-//					file.createNewFile();
-//				} catch (IOException e1) {
-//					e1.printStackTrace();
-//				}
-//			}	
-//			String idSt=tfId.getText();	// id
-//			String idPw=tfPw.getText();	// pw
-//			String fileName=taTitle.getText();	// 파일이름 (제목)
-//			///날짜
-//			GregorianCalendar gc = new GregorianCalendar();
-//	        SimpleDateFormat sf = new SimpleDateFormat("yyyyMMdd");
-//	        Date d = gc.getTime();
-//	        String wrDate = sf.format(d).substring(0,4)+"-"+sf.format(d).substring(4,6)+"-"+sf.format(d).subSequence(6, 8);
-//	        
-//			
-//			FileOutputStream out=new java.io.FileOutputStream(file);
-//			byte[] arridSt=idSt.getBytes();	// id
-//			byte[] arridPw=idPw.getBytes();	// pw
-//			byte[] arrFiName=fileName.getBytes();	// 제목
-//			byte[] arrDate=wrDate.getBytes();	// 날짜
-//			byte[] arrMsg=msg.getBytes();	// 내용
-//	        out.write('\n');    // 줄바꿈
-//			for(int i=0; i<arridSt.length; i++){	// id
-//				out.write(arridSt[i]);
-//			};
-//	        out.write('\n');    // 줄바꿈
-//			for(int i=0; i<arrDate.length; i++){	// 날짜
-//				out.write(arrDate[i]);
-//			};
-//	        out.write('\n');    // 줄바꿈
-//			for(int i=0; i<arridPw.length; i++){	// pw
-//				out.write(arridPw[i]);
-//			};
-//	        out.write('\n');    // 줄바꿈
-//			for(int i=0; i<arrMsg.length; i++){		// 내용
-//				out.write(arrMsg[i]);
-//			};				
-//			out.close();
-//			System.out.println("작성완료");
-//			
-//		} catch (FileNotFoundException e1) {
-//			e1.printStackTrace();
-//		} catch (IOException e1) {
-//			e1.printStackTrace();
-//		}
-		
-		
-		
-//		try {
-//			reader = new BufferedReader(new FileReader(fiPath));
-//			while ((str = reader.readLine()) != null) {
-//				list.add(str);
-//			}
-//			tLa2[0].setText((list.get(0)).toString());	// topBp - 제목
-//			tLa2[1].setText((list.get(1)).toString());	// topBp - 작성자
-//			tLa2[2].setText((list.get(2)).toString());	// topBp - 날짜
-//			ta.setText((list.get(4)).toString());		// pBtt - 내용
-//			ta.setEditable(false);	// 내용 수정 불가
-//			reader.close();
-//			
-//		} catch (FileNotFoundException e1) {
-//			e1.printStackTrace();
-//		} catch (IOException e1) {
-//			e1.printStackTrace();
-//		}
 	}
 
 	
@@ -370,6 +316,7 @@ public class Sopj03 extends Frame implements ActionListener{
 		
 		////댓글작성묶음
 		JPanel pcoSet=new JPanel(new GridLayout(3,1));	// 댓글작성묶음 패널 start	
+		pcoSet.setBorder(BorderFactory.createEmptyBorder(0 , 10 , 0 , 10)); //상하좌우 10씩 띄우기
 //		pcoSet.setBorder(BorderFactory.createCompoundBorder(lineBorder, emptyBorder2));
 		JPanel pcoSetTop=new JPanel(new GridLayout(1,4));
 		JLabel coLa1=new JLabel("아이디");
@@ -378,7 +325,7 @@ public class Sopj03 extends Frame implements ActionListener{
 		coLa1.setHorizontalAlignment(JLabel.CENTER);
 		coLa1.setOpaque(true);
 		pcoSetTop.add(coLa1);
-		JTextField tfCoId = new JTextField();	// 댓글아이디
+		tfCoId = new JTextField();	// 댓글아이디
 		pcoSetTop.add(tfCoId);
 		JLabel coLa2=new JLabel("비번");
 		coLa2.setForeground(Color.WHITE);	// j라벨 font색변경
@@ -386,7 +333,8 @@ public class Sopj03 extends Frame implements ActionListener{
 		coLa2.setOpaque(true);
 		coLa2.setHorizontalAlignment(JLabel.CENTER);
 		pcoSetTop.add(coLa2);
-		JTextField tfCoPw = new JTextField();	// 댓글비번
+		tfCoPw = new JPasswordField();	// 댓글비번
+		tfCoPw.setEchoChar('*');
 		pcoSetTop.add(tfCoPw);
 		pcoSet.add(pcoSetTop);
 		
@@ -404,10 +352,11 @@ public class Sopj03 extends Frame implements ActionListener{
 		
 		
 		////댓글출력묶음패널		
-		JPanel pComPr=new JPanel(new BorderLayout());	// 댓글출력묶음패널 start
+		pComPr=new JPanel(new BorderLayout());	// 댓글출력묶음패널 start
 		pComPr.setBorder(BorderFactory.createCompoundBorder(lineBorder2, emptyBorder3));
 		
 		JPanel comentNum=new JPanel(new BorderLayout());	// 댓글 갯수현황
+		comentNum.setBorder(BorderFactory.createEmptyBorder(0 , 10 , 0 , 10)); //상하좌우 10씩 띄우기
 		JPanel coNumLeft=new JPanel();		
 		JLabel coNum=new JLabel("댓글 ");
 		coNumLeft.add(coNum);
@@ -415,11 +364,12 @@ public class Sopj03 extends Frame implements ActionListener{
 		pComPr.add(comentNum, BorderLayout.NORTH);
 
 		JPanel pComPrSet=new JPanel(new GridLayout(2,1));	// 댓글출력묶음Set start
-		pComPrSet.setBorder(BorderFactory.createCompoundBorder(lineBorder, emptyBorder2));
+		pComPr.setBorder(BorderFactory.createEmptyBorder(0 , 10 , 20 , 10)); //상하좌우 10씩 띄우기
+//		pComPrSet.setBorder(BorderFactory.createCompoundBorder(lineBorder, emptyBorder2));
 		
 		JPanel pComPrTop=new JPanel(new BorderLayout());	// 댓글출력 탑 패널	start	
 		JPanel pComPrTopLeft=new JPanel(new BorderLayout());	// 탑-왼쪽
-		JTextField tfCoPrId = new JTextField("바나나맛");	// 댓글아이디출력
+		tfCoPrId = new JTextField(10);	// 댓글아이디출력
 		pComPrTopLeft.add(tfCoPrId);
 		pComPrTop.add(pComPrTopLeft, BorderLayout.WEST);
 
@@ -433,16 +383,16 @@ public class Sopj03 extends Frame implements ActionListener{
 		
 
 		JPanel pComPrBtt=new JPanel(new BorderLayout());	// 댓글출력 바텀 패널	start	
-		JTextArea coPrTa=new JTextArea();	// 댓글내용출력
+		coPrTa=new JTextArea();	// 댓글내용출력
 		pComPrBtt.add(coPrTa, BorderLayout.CENTER);	
 		JButton coPrReCoTa=new JButton("답글");	// 댓글의 댓글출력
 		pComPrBtt.add(coPrReCoTa, BorderLayout.EAST);
 		pComPrSet.add(pComPrBtt);	// 댓글출력 바텀 패널	end
 		
 		pComPr.add(pComPrSet, BorderLayout.CENTER);
-		
+		pComPr.setVisible(false);
 		pComent.add(pComPr, BorderLayout.CENTER);// 댓글출력묶음패널 end	
-		
+	          		
 		
 
 		allListP.add(pComent, BorderLayout.SOUTH);		// 댓글패널 end		

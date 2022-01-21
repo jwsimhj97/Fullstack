@@ -1,0 +1,12 @@
+--create table 테이블명 (컬럼명 자료형, 컬럼명 자료형, ....);
+create table ex03(
+	num1 number,
+	name varchar2(3),
+	num2 number(2),		-- 소수점뒤에 붙어도 포함되지 않고 생략됨
+	num3 number(3,1)
+);
+select * from ex03;
+insert into ex03 values (1,'aaa',11,12.3);
+insert into ex03 values (2,'bbb',2,12.3);
+insert into ex03 values (3,'bbb',33.33,12.3);	-- 자릿수 외 값은 생략됨 33.33 -> 33
+insert into ex03 values (4,'bbb',44,12.34); 	-- 자릿수 외 값은 생략됨

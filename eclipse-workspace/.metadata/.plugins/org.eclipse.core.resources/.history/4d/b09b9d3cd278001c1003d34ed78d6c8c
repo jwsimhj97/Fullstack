@@ -1,0 +1,19 @@
+package com.hi;
+
+import java.sql.*;
+import oracle.jdbc.driver.OracleDriver;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		String sql="insert into dept (deptno,dname,loc) values (70,'HH','II')";
+		OracleDriver driver=new OracleDriver();
+		try {
+			DriverManager.registerDriver(driver);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

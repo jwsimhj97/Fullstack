@@ -1,0 +1,22 @@
+package com.web;
+
+import java.io.IOException;
+import java.net.*;
+
+public class Server {
+
+	public static void main(String[] args) throws IOException{
+		ServerSocket serve=null;
+		Socket sock=null;
+		try {
+			serve=new ServerSocket(80);
+			sock=serve.accept();
+			System.out.println(sock);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			serve.close();
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+create table bbs01(
+	num number,
+	sub varchar2(30),
+);

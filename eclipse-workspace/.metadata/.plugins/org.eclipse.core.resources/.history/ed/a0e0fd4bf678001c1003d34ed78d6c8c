@@ -1,0 +1,9 @@
+-- 학생성적관리프로그램
+create table stu01(
+	num number,
+	name varchar2(9),
+	kor number(3),
+	eng number(3),
+	math number(3)
+);
+select * from stu01;

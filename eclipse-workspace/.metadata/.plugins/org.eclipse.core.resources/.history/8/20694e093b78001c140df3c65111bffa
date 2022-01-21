@@ -1,0 +1,13 @@
+package com.hi;
+
+import oracle.jdbc.driver.OracleDriver;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		oracle.jdbc.driver.OracleDriver driver;
+		driver=new OracleDriver();
+		java.sql.DriverManager.deregisterDriver(driver);
+	}
+
+}

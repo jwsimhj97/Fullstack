@@ -1,0 +1,12 @@
+create table guest01(
+	msg varchar2(2000),
+	nalja date
+);
+
+insert into guest01 values('test1',sysdate);
+insert into guest02 values('test2',sysdate);
+insert into guest03 values('test3',sysdate);
+insert into guest04 values('test4',sysdate);
+insert into guest05 values('test5',sysdate);
+
+select * from guest01();

@@ -1,0 +1,22 @@
+package com.hi;
+
+import java.sql.*;
+import oracle.jdbc.driver.OracleDriver;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		String sql="insert into dept (deptno,dname,loc) values (70,'HH','II')";
+		String url="jdbc:oracle:thin:sc@localhost:1521:xe";
+		OracleDriver driver=new OracleDriver();
+		Connection conn=null;
+		
+		try {
+			DriverManager.registerDriver(driver);
+			conn=DriverManager.getConnection(url);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
