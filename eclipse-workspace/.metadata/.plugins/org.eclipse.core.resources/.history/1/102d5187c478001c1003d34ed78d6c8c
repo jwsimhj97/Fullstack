@@ -1,4 +1,0 @@
--- DML (select, insert, update, delete) - CRUD
-select * from dept;
-
-insert into dept(deptno,dname,loc) values(50,'add1','add2');

@@ -1,0 +1,20 @@
+--서브쿼리
+--메인쿼리문장 안에 들어가는 또 다른쿼리문장
+--DML, DDL
+--select (서브쿼리) from (서브쿼리) where (서브쿼리)
+--		    필드		   테이블			 조건
+--
+--
+--테이블자리 서브쿼리 : 테이블역할을 수행한다. 
+--select의 의미를 지니고 있다. 단, 자유롭게 모두 가능
+--ex) select * from (select 'add', dname from dept);
+--ex) select * from (select sal+nvl(comm,0) from emp);
+--ex) select ename,(select loc from dept where dept.deptno=emp.deptno) from emp;
+--
+--필드자리 서브쿼리 
+--단일결과 값 (단일 컬럼&레코드)
+--ex) select ename,sal from emp where sal>=(select avg(sal) from emp);
+--ex) select avg(sal) from emp;
+--ex) select ename,deptno from emp where deptno in (select deptno from dept wehre deptno<30);
+--es) insert into ex02 (select 6666, '대구' from dual);
+--ex) create table ex03 as (select * from dept);

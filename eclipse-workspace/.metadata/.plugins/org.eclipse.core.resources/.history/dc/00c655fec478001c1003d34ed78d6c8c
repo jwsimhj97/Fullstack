@@ -1,7 +1,0 @@
--- DML (select, insert, update, delete) - CRUD
-select * from dept;
-
---테이블에 새로운 행 추가 => insert into 행이름
---(컬럼이름의 갯수와 벨류값의 갯수가 같아야한다.)
-insert into dept(deptno,dname,loc) values(50,'add1','add2');
-insert into dept(deptno,dname) values(60,'add3');
