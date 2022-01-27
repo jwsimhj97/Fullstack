@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+	<table border="0" width="800" align="center" cellspacing="1">
+		<tr><!-- header -->
+			<td colspan="6">
+				<a href="/day36/index.jsp"><img src="/day36/imgs/logo.png"></a>
+			</td>
+		</tr>
+		<tr><!-- menu -->
+			<td bgcolor="#17386c"></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/index.jsp"><img src="/day36/imgs/home.png"></a></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/intro.jsp"><img src="/day36/imgs/intro.png"></a></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/bbs/list.jsp"><img src="/day36/imgs/bbs.png"></a></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/login/form.jsp"><img src="/day36/imgs/login.png"></a></td>
+			
+			<!-- <td bgcolor="#17386c" width="150"><a href="/day36/index.jsp"><img src="https://dummyimage.com/150x50/aaa/fff.png&text=HOME"></a></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/intro.jsp"><img src="https://dummyimage.com/150x50/aaa/fff.png&text=INTRO"></a></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/bbs/list.jsp"><img src="https://dummyimage.com/150x50/aaa/fff.png&text=BBS"></a></td>
+			<td bgcolor="#17386c" width="150"><a href="/day36/login/form.jsp"><img src="https://dummyimage.com/150x50/aaa/fff.png&text=LOGIN"></a></td> -->
+			<td bgcolor="#17386c"></td>
+		</tr>
+		<tr><!-- content -->
+			<td colspan="6" align="center">			
+			<!-- cont start -->
