@@ -1,0 +1,159 @@
+2월 04, 2022 10:14:43 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\병아리]을(를) 배치합니다.
+2월 04, 2022 10:14:43 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\병아리]에 대한 배치가 [110] 밀리초에 완료되었습니다.
+2월 04, 2022 10:14:54 오전 org.apache.catalina.startup.HostConfig undeploy
+정보: 컨텍스트 [/병아리]의 배치를 제거합니다.
+2월 04, 2022 10:14:54 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\day39]을(를) 배치합니다.
+2월 04, 2022 10:14:54 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\day39]에 대한 배치가 [47] 밀리초에 완료되었습니다.
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 서버 버전 이름:    Apache Tomcat/7.0.109
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server 빌드 시각:  Apr 22 2021 18:43:38 UTC
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: Server 버전 번호:  7.0.109.0
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 운영체제 이름:     Windows 10
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 운영체제 버전:     10.0
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 아키텍처:          amd64
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 자바 홈:           C:\Program Files\Java\jre1.8.0_311
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM 버전:          1.8.0_311-b11
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: JVM 벤더:          Oracle Corporation
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_BASE:     C:\server\Tomcat 7.0
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: CATALINA_HOME:     C:\server\Tomcat 7.0
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dcatalina.home=C:\server\Tomcat 7.0
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Dcatalina.base=C:\server\Tomcat 7.0
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Djava.io.tmpdir=C:\server\Tomcat 7.0\temp
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\server\Tomcat 7.0\conf\logging.properties
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  exit
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  abort
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Xms128m
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.VersionLoggerListener log
+정보: 명령 행 아규먼트:  -Xmx256m
+2월 04, 2022 10:20:45 오전 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+정보: 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [C:\server\Tomcat 7.0\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jre1.8.0_311\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_311\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\hi\AppData\Local\Microsoft\WindowsApps;C:\Users\hi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\GitHub CLI\;.]
+2월 04, 2022 10:20:45 오전 org.apache.coyote.AbstractProtocol init
+정보: 프로토콜 핸들러 ["http-bio-8080"]을(를) 초기화합니다.
+2월 04, 2022 10:20:45 오전 org.apache.coyote.AbstractProtocol init
+심각: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use: JVM_Bind <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:414)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:750)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:467)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:826)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:244)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:401)
+	... 17 more
+
+2월 04, 2022 10:20:45 오전 org.apache.catalina.core.StandardService initInternal
+심각: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1032)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:560)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:826)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:686)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:244)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: java.net.BindException: Address already in use: JVM_Bind <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:414)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:750)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:467)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:401)
+	... 17 more
+
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.Catalina load
+정보: Initialization processed in 1036 ms
+2월 04, 2022 10:20:45 오전 org.apache.catalina.core.StandardService startInternal
+정보: 서비스 [Catalina]을(를) 시작합니다.
+2월 04, 2022 10:20:45 오전 org.apache.catalina.core.StandardEngine startInternal
+정보: Starting Servlet Engine: Apache Tomcat/7.0.109
+2월 04, 2022 10:20:45 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\day38]을(를) 배치합니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\day38]에 대한 배치가 [312] 밀리초에 완료되었습니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\day39]을(를) 배치합니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\day39]에 대한 배치가 [47] 밀리초에 완료되었습니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\docs]을(를) 배치합니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\docs]에 대한 배치가 [46] 밀리초에 완료되었습니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\manager]을(를) 배치합니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\manager]에 대한 배치가 [47] 밀리초에 완료되었습니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\ROOT]을(를) 배치합니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.HostConfig deployDirectory
+정보: 웹 애플리케이션 디렉토리 [C:\server\Tomcat 7.0\webapps\ROOT]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+2월 04, 2022 10:20:46 오전 org.apache.catalina.startup.Catalina start
+정보: Server startup in 630 ms
+2월 04, 2022 10:20:46 오전 org.apache.coyote.AbstractProtocol pause
+정보: 프로토콜 핸들러 ["http-bio-8080"]을(를) 일시 정지 중
+2월 04, 2022 10:20:46 오전 org.apache.catalina.core.StandardService stopInternal
+정보: 서비스 [Catalina]을(를) 중지시킵니다.
+2월 04, 2022 10:20:46 오전 org.apache.coyote.AbstractProtocol stop
+정보: 프로토콜 핸들러 ["http-bio-8080"]을(를) 중지시킵니다.
+2월 04, 2022 10:20:46 오전 org.apache.coyote.AbstractProtocol destroy
+정보: 프로토콜 핸들러 ["http-bio-8080"]을(를) 소멸시킵니다.

@@ -1,0 +1,32 @@
+[2021-12-17 10:06:05] [info]  [ 8992] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-17 10:06:05] [info]  [ 8992] Installing service 'Tomcat7' name 'Apache Tomcat 7.0 Tomcat7'.
+[2021-12-17 10:06:05] [info]  [ 8992] Service 'Tomcat7' installed.
+[2021-12-17 10:06:05] [info]  [ 8992] Apache Commons Daemon procrun finished.
+[2021-12-17 10:06:06] [info]  [ 8412] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-17 10:06:06] [info]  [ 8412] Updating service...
+[2021-12-17 10:06:06] [info]  [ 8412] Updated service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [ 8412] Finished updating service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [ 8412] Apache Commons Daemon procrun finished.
+[2021-12-17 10:06:06] [info]  [ 8836] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-17 10:06:06] [info]  [ 8836] Updating service...
+[2021-12-17 10:06:06] [info]  [ 8836] Updated service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [ 8836] Finished updating service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [ 8836] Apache Commons Daemon procrun finished.
+[2021-12-17 10:06:06] [info]  [  876] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-17 10:06:06] [info]  [  876] Updating service...
+[2021-12-17 10:06:06] [info]  [  876] Updated service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [  876] Finished updating service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [  876] Apache Commons Daemon procrun finished.
+[2021-12-17 10:06:06] [info]  [ 7268] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-17 10:06:06] [info]  [ 7268] Updating service...
+[2021-12-17 10:06:06] [info]  [ 7268] Updated service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [ 7268] Finished updating service 'Tomcat7'.
+[2021-12-17 10:06:06] [info]  [ 7268] Apache Commons Daemon procrun finished.
+[2021-12-17 10:06:17] [info]  [ 9976] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-12-17 10:06:17] [info]  [ 9976] Running Service 'Tomcat7'...
+[2021-12-17 10:06:17] [info]  [ 4272] Starting service...
+[2021-12-17 10:06:19] [info]  [ 4272] Service started in 1744 milliseconds.
+[2021-12-17 17:23:55] [info]  [12024] Stopping service...
+[2021-12-17 17:23:56] [info]  [12024] Service stop thread completed.
+[2021-12-17 17:23:56] [info]  [ 9976] Run service finished.
+[2021-12-17 17:23:56] [info]  [ 9976] Apache Commons Daemon procrun finished.

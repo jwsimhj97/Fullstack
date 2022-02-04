@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        input[type='number'] {color:red;}
+    </style>
+</head>
+<body>
+    <form action="ex01.html">
+        <input type="number" value="10"/><br/>              <!-- 모바일에서 숫자키패드 -->
+        <input type="tel" value="aaaa"/><br/>               <!-- 전화번호를 입력할 수 있는 기능 -->
+        <input type="url" value="http://aaaa.com"/><br/>    <!-- 모바일키패드 자판형태에서 .자리가 @로 뜨는상태 -->
+        <input type="email" value="aaa@a"><br/>             <!-- @가 들어가는지(이메일 형태인지) 확인해준다. -->
+        <input type="color"/><br/>
+        <input type="date"/><br/>
+        <input type="datetime"/><br/>
+        <input type="time"/><br/>
+        <input type="range" min="1" max="10" value="5" name="ran"/><br/>  <!-- 최소값과 최대값이 있어야한다 -->
+
+        <input type="submit" value="전송1"/>                <!-- form의 action경로로 이동해주는 기능-->
+        <input type="button" value="버튼1"/>                <!-- 일반 버튼기능 -->
+        <button>전송2</button>      <!-- form태그안의 button은 submit type이다.-->
+
+    </form>
+    <button>버튼2</button>          <!-- form태그밖의 button은 button type이다.-->
+
+</body>
+</html>
