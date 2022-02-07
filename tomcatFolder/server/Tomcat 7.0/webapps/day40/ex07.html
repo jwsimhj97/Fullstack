@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" typer="text/css">
+        /* 0~799px */
+        @media screen and (max-width:767px){
+            #menu>div{background: #aaa; border-radius: 5px; width: 30px; height: 30px; margin: 5px; display: inline-block;}
+            #menu>div>span{border: 1px solid #000; display: block; margin: 5px 0px;}
+
+            #menu{background: #ccc; width: 100%; height: 50px;position: fixed; top: 0; left: 0;}
+            ul{position: absolute; top: 50px; list-style: none; padding: 0; margin: 0; width: 100%;}
+            ul>li{width: 100%;height: 50px; background: #aaa;}
+        }
+        
+        /* 800~991px */
+        @media screen and (min-width:768px)and (max-width:991px){
+            #menu{background: #ccc; width: 100%; height: 50px; position: fixed; top: 0; left: 0;}
+            ul{list-style: none; overflow: hidden; padding: 0; margin: 0;}
+            ul>li{width: 50%; height: 50px; background: #aaa; float: left;}
+        }
+
+        /* 992px~ */
+        @media screen and (min-width:992px){
+            #menu{background: #ccc; width: 100%; height: 50px; position: fixed; top: 0; left: 0;}
+            ul{list-style: none; overflow: hidden; padding: 0; margin: 0;}
+            ul>li{width: 100px; height: 50px; background: #aaa; float: left;}
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div><span></span><span></span><span></span></div>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            <li>menu6</li>
+        </ul>
+    </div>
+</body>
+</html>

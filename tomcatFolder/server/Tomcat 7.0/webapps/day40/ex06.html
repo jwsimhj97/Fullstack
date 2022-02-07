@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        body>div{width: 800px; margin: 0 auto;}
+        /* header */
+        #header{}
+        #header>h1{text-indent: -9999px; background: url(./logo.png)no-repeat; height: 100px;}
+        
+        /* menu */
+        #menu{}
+        #menu>ul{list-style: none; overflow: hidden; width: 400px; margin: 0 auto;}
+        #menu>ul>li{width: 100px; height: 25px; background: #aaa; float: left; text-align: center; color:#fff; transition-duration: 1s;}
+        #menu>ul>li:hover{height: 120px;}
+        #menu>ul>li>ol{list-style: none; padding: 0;}
+        #menu>ul>li>ol>li{height: 25px; text-align: center; color:#fff;}
+
+        /* content */
+        #content{height: 300px;}
+        #aside{}
+        #footer{background: #aaa;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>하이미디어</h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>menu1</li>
+            <li>menu2
+                <ol>
+                    <li>menu2-1</li>
+                    <li>menu2-2</li>
+                    <li>menu2-3</li>
+                    <li>menu2-4</li>
+                </ol>
+            </li>
+            <li>menu3                
+                <ol>
+                    <li>menu3-1</li>
+                    <li>menu3-2</li>
+                    <li>menu3-3</li>
+                    <li>menu3-4</li>
+                </ol>
+            </li>
+            <li>menu4</li>
+        </ul>
+    </div>
+    <div id="content">하이미디어가 지향하는 가장 근본적인 교육의 목표는 저희 수강생들의 꿈과 희망을 얼마만큼 현실화 시켜줄 수 있느냐에 있습니다.
+        전문 교과운영팀을 통한 철저한 과정개발을 시작으로 단순한 메뉴얼 위주의 수업이 아닌 현장감이 살아있는 실무위주의 수업을 진행하므로써 수업의 재미와 긴장감을 통한 수강생들의 집중도를 최대한 이끌어 내고 있습니다. 또한 학원 운영진과 강사, 그리고 수강생 모두가 스스럼없이 친밀한 관계를 형성할 수 있도록 노력하고 있으며, 수강생들이 수업에만 몰입할 수 있는 편안한 환경조성에 모두가 최선을 다하고 있습니다.</div>
+    <div id="aside"></div>
+    <div id="footer">copyright ⓒHimedia Academy, All Rights Reserved.</div>
+</body>
+</html>

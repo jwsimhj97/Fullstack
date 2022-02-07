@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        body{margin: 0; padding: 0;}
+        .containerw{width: 100%; overflow: hidden; margin: 0 auto;}
+        .containerw .grid1, .containerw .grid2, .containerw .grid3, .containerw .grid4, .containerw .grid5, .containerw .grid6, .containerw .grid7, .containerw .grid8, .containerw .grid9, .containerw .grid10, .containerw .grid11, .containerw .grid12{float: left; background-color: rgb(255, 174, 174);}
+        .containerw .grid1{width: 8.333%;}
+        .containerw .grid2{width: 16.666%;}
+        .containerw .grid3{width: 25%;}
+        .containerw .grid4{width: 33.333%;}
+        .containerw .grid5{width: 41.666%;}
+        .containerw .grid6{width: 50%;}
+        .containerw .grid7{width: 58.333%;}
+        .containerw .grid8{width: 66.666%;}
+        .containerw .grid9{width: 75%;}
+        .containerw .grid10{width: 83.333%;}
+        .containerw .grid11{width: 91.666%;}
+        .containerw .grid12{width: 100%;}
+        .row{clear: both;}
+
+        @media screen and (max-width:799px) {
+            .containerw .mgrid1{width: 8.333%;}
+            .containerw .mgrid2{width: 16.666%;}
+            .containerw .mgrid3{width: 25%;}
+            .containerw .mgrid4{width: 33.333%;}
+            .containerw .mgrid5{width: 41.666%;}
+            .containerw .mgrid6{width: 50%;}
+            .containerw .mgrid7{width: 58.333%;}
+            .containerw .mgrid8{width: 66.666%;}
+            .containerw .mgrid9{width: 75%;}
+            .containerw .mgrid10{width: 83.333%;}
+            .containerw .mgrid11{width: 91.666%;}
+            .containerw .mgrid12{width: 100%;}
+            .containerw .mclear{display: none;}
+        }
+    </style>
+</head>
+<body>
+    <div class="containerw">
+        <div class="row">
+            <div class="mgrid3 grid1">cell1</div>
+            <div class="mgrid9 grid11">cell11</div>
+        </div>
+        <div class="row">
+            <div class="mgrid3 grid2">cell2</div>
+            <div class="mgrid9 grid10">cell10</div>
+        </div>
+        <div class="row">
+            <div class="mgrid6 grid3">cell3</div>
+            <div class="mgrid6 grid9">cell9</div>
+        </div>
+        <div class="row">
+            <div class="mgrid9 grid4">cell4</div>
+            <div class="mgrid3 grid8">cell8</div>
+        </div>
+        <div class="row">
+            <div class="mgrid9 grid5">cell5</div>
+            <div class="mgrid3 grid7">cell7</div>
+        </div>
+        <div class="row">
+            <div class="mgrid12 grid6">cell6</div>
+            <div class="mgrid12 grid6">cell6</div>
+        </div>
+        <div class="row">
+            <div class="mclear grid12">cell12</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
