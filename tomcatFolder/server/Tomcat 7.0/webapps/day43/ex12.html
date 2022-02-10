@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        body>div{margin: 0 auto; width: 800px;}
+        body>div:nth-child(2),body>div:nth-child(4){background: #aaa; text-align: center;}
+        body>div:nth-child(2)>a{display: inline-block; width: 100px; height: 50px; background: #ccc; color:#fff; line-height: 50px; text-decoration: none;}
+        #carousel>img{display: none;}
+        .banner{display: block;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>하이미디어</h1>
+    </div>
+    <div>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+    </div>
+    <div>
+        <div id="carousel">img rolling</div>
+    </div>
+    <div>copyright ⓒHimedia Academy, All Rights Reserved.</div>
+
+    <script type="text/javascript">
+        var carousel=document.querySelector('#carousel');
+        var cnt=1;
+
+        function show(num){
+            var num=cnt<6?cnt++:cnt=0;
+            carousel.innerHTML='';
+            for(var i=0; i<6; i++){
+                imgs(num,i);
+            }
+        }
+
+        function imgs(num,num2){
+            var banner=num==num2?'banner':'';
+            carousel.innerHTML+='<img class="'+banner+'" src="imgs/big0'+num2+'.jfif"/>';
+        }
+    </script>
+</body>
+</html>

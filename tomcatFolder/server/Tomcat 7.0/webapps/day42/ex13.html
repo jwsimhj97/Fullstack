@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        // var a=window.parseInt('1111');
+        // console.log(a+1);
+        var obj;
+        var cnt=0;
+        var callback=function(){
+            console.log(new Date());
+            // obj=setTimeout(callback, 1000);
+            cnt++;
+        };
+        obj=setTimeout(callback,1000);
+        console.log(cnt);
+
+        // setInterval(callback,1000);
+        // setTimeout(callback,3000);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

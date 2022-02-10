@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        var frame;
+        function func01(){
+            frame=window.open("https://m.naver.com","_blank","toobar=yes,scrollbars=yes,resizable=no,top500,left=500,width=400,height=400");
+        }
+        function func02(){
+            frame.close();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="func01();">open</button>
+    <button onclick="func02();">close</button>
+</body>
+</html>
