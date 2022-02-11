@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        var h1,input,btn,div;
+        window.onload=function(){
+            input=document.querySelector('input');
+            btn=document.querySelector('button');
+            div=document.querySelector('#result');
+            input.onkeydown=function(e){
+                console.log('key down',input.value,e.keyCode,e.charCode,e.key);
+            };
+            input.onkeyup=function(e){
+                console.log('key up',input.value,e.keyCode,e.charCode,e.key);
+            };
+            input.onkeypress=function(e){
+                console.log('key press',input.value,e.keyCode,e.charCode,e.key);
+            };
+        };
+    </script>
+</head>
+<body>
+    <h1>키보드 이벤트</h1>
+    <input type="text"/>
+    <button>btn</button>
+    <div id="result"></div>
+</body>
+</html>

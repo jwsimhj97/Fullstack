@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        var input;
+        function loading(){
+            input=document.querySelector('input');
+        }
+        function func01(){
+            console.log('버튼 누름:'+input.value,this);
+        }
+        function func02(){
+            alert('버튼 누름:'+input.value);
+        }
+    </script>
+</head>
+<body onload="loading();">
+    <h1>DOM level 1 event</h1>
+    <input type="text"/>
+    <button onclick="func01();">btn1</button>
+    <button>btn2</button>
+    <button onclick="func02();">btn3</button>
+
+</body>
+</html>

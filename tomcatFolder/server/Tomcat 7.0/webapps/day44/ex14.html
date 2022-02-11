@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        .cl01{/*background: #ff0;*/ animation: ani1 3s infinite linear;}
+
+        @keyframes ani1{
+            from{
+                color:#fff;
+            }
+            to{
+                color:#000;
+            }
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        var h1,ul,lis,arr;
+
+        window.onload=function(){
+            h1=document.querySelector('h1');
+            // h1.className='cl01';
+            ul=document.querySelector('ul');
+            lis=document.querySelector('li');
+            arr=[];
+            for(var i=0; i<lis.length; i++){
+                arr.push(lis[i]);
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>적용</h1>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+</body>
+</html>

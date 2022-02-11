@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        div{background: #ff0; width: 300px; height: 200px;}
+        p{background: #00f; width: 200px; height: 100px;}
+        span{background: #f00; font-weight: 700;}
+    </style>
+    <script type="text/javascript">
+        var div,p,span;
+        window.onload=function(){
+            div=document.querySelector('div');
+            p=document.querySelector('p');
+            span=document.querySelector('span');
+
+            div.addEventListener('mouseover',function(e){
+                e.stopPropagation();    //이벤트 전파 막기
+                console.log('div');
+            },false);
+            p.addEventListener('mouseover',function(e){
+                e.stopPropagation();
+                console.log('p');
+            },false);
+            span.addEventListener('mouseover',function(e){
+                e.stopPropagation();
+                console.log('span');
+            },false);
+        };
+    </script>
+</head>
+<body>
+    <div>
+        ~
+        <p>이벤트 전파를 통해 <span>버블링과 캡쳐링</span>이 일어난다</p>
+        ~
+    </div>
+</body>
+</html>

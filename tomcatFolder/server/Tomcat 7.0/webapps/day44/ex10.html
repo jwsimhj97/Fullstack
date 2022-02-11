@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        div{width: 100px; height: 100px; background: #ff0;}
+    </style>
+    <script type="text/javascript">
+        var div;
+        var callback1=function(){
+            div.innerHTML+='click<br/>';
+        };
+        var callback2=function(){
+            div.innerHTML+='over<br/>';
+        };
+        window.onload=function(){
+            div=document.querySelector('div');
+            div.onclick=callback1;
+            // div.addEventListener('click',callback1);
+            div.addEventListener('click',callback1);
+            div.addEventListener('click',callback2);
+            // div.addEventListener('mouseover',callback2);
+        };
+    </script>
+</head>
+<body>
+    <h1>mouse event</h1>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        window.onload=function(){
+            alert('window loading end...');
+        };
+        window.onbeforeunload=function(){
+            alert('window reloading 전...');
+        };
+        var cnt=0;
+        window.onresize=function(){
+            console.log('사이즈 조정',cnt++);
+        };
+        document.onloadeddata=function(){
+            console.log('data loading...');
+        };
+    </script>
+</head>
+<body>
+    <h1>window event</h1>
+</body>
+</html>

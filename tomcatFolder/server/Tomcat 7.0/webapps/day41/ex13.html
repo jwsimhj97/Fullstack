@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        // var a= function (){
+        //     console.log('func01() run...');
+        //     return 1234;
+        // }
+        // console.log(typeof a);
+        // a();
+
+        // var obj={};
+        // obj.func01=function(){
+        //     console.log('func01() run...');
+        //     return 1234;
+        // };
+        // console.log(typeof obj.func01);
+        // obj.func01();
+
+        var obj={
+            "key1":"val1",
+            "func01":function(){
+                console.log('func01() run...');
+                return 1234;
+            }
+        };
+        console.log(typeof obj.func01);
+        obj.func01();
+
+        var arr1=['item1', 'item2', function(){
+            console.log('출력');
+        }];
+        console.log(arr1[0]);
+        console.log(arr1[1]);
+        var d=arr1[2];
+        d();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

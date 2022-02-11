@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        div{background: #ff0; width: 200px; height: 100px; display: flex; justify-content: center; align-content: center;}
+        button{display: block; margin: 20px auto;}
+    </style>
+
+    <script type="text/javascript">
+        var h1,btn,div;
+        window.onload=function(){
+            btn=document.querySelector('button');
+            div=document.querySelector('div');
+            // btn.onclick=function(){
+            //     console.log('클릭');
+            // };
+            // btn.ondblclick=function(){
+            //     console.log('더블클릭');
+            // };
+            
+            // btn.onmouseup=function(){
+            //     console.log('mouse press');
+            // };
+            // btn.onmousedown=function(){
+            //     console.log('mouse ');
+            // };
+
+            // btn.onmouseover=function(){
+            //     console.log('btn mouseover');
+            // };
+            // btn.onmouseout=function(){
+            //     console.log('btn mouseout');
+            // };
+            // div.onmouseover=function(){
+            //     console.log('div mouseover');
+            // };
+            // div.onmouseout=function(){
+            //     console.log('div mouseout');
+            // };
+
+            btn.onmouseenter=function(){
+                console.log('btn mouseover2');
+            };
+            btn.onmouseleave=function(){
+                console.log('btn mouseout2');
+            };
+            div.onmouseenter=function(){
+                console.log('div mouseover2');
+            };
+            div.onmouseleave=function(){
+                console.log('div mouseout2');
+            };
+            
+        };
+    </script>
+</head>
+<body>
+    <h1>마우스 이벤트</h1>
+    <button>버튼</button>
+    <div></div>
+</body>
+</html>
