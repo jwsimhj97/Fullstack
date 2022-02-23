@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('button').click(function(e){
+                $('div').append('x:'+e.pageX+',y:'+e.pageY+'<br/>');
+            });
+
+            // $('body').mouseover(function(){
+            //     console.log('body over');
+            // });
+            // $('body').mouseout(function(){
+            //     console.log('body out');
+            // });
+            // $('button').mouseover(function(){
+            //     console.log('btn over');
+            // });
+            // $('button').mouseout(function(){
+            //     console.log('btn out');
+            // });
+
+            $('body').mouseenter(function(){
+                console.log('body mouse over2');
+            });
+            $('body').mouseleave(function(){
+                console.log('body mouse out2');
+            });
+            $('button').mouseenter(function(){
+                console.log('btn mouse over2');
+            });
+            $('button').mouseleave(function(){
+                console.log('btn mouse out2');
+            });
+            
+            $('div').dblclick(function(){
+                $('div').append('dblclick<br/>');
+            });
+
+            $('button').mouseup(function(){
+                $('div').append('마우스버튼 up<br/>');
+            });
+            $('button').mousedown(function(){
+                $('div').append('마우스 버튼 down<br/>');
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>마우스 이벤트</h1>
+    <button>btn</button>
+    <div></div>
+</body>
+</html>

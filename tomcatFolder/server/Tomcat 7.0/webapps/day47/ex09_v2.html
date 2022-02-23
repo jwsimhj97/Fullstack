@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        var abc='abc';
+        var callback=function(e){
+                console.log($(this).text(),e.data);
+            };
+        var obj;
+        $(function(){
+            $(document).on('click','button',abc,callback);
+            $('<button>btn2</button>').appendTo('div');
+            obj=$('<form action="ex10.html"></form>');
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>event binding</h1>
+    <div><button>btn1</button></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('form').submit(function(e){
+                console.log('기본기능 취소');
+                return false;
+                // var id1=$('input').eq(0).val();
+                // if(id1)return true;
+                // else return false
+            });
+            // $('input').focusout(function()P{});
+
+
+            $('select').change(function(){
+                console.log('select 선택', $('select').val());
+            });
+            $('button[type=button]').click(function(){
+                history.back();
+            });
+            $('input').eq(0).focusin(function(){
+                var val=$('input').eq(0).val();
+                if(val==='id입력')$('input').eq(0).val('');
+            });
+            $('input').eq(1).focusout(function(){
+                if($('input').eq(1).val().length<4)alert('4자이상');
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="ex08.html">
+        <div><label for="id">id</label><input type="text" id="id" value="id입력"></div>
+        <div><label for="pw">pw</label><input type="password" id="pw"></div>
+        <div>
+            <select name="sel" id="">
+                <option value="it1">item1</option>
+                <option value="it2">item2</option>
+                <option value="it3">item3</option>
+                <option value="it4">item4</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">전송</button>
+            <button type="reset">취소</button>
+            <button type="button">뒤로</button>
+        </div>
+    </form>
+</body>
+</html>

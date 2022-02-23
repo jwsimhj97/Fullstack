@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            console.log('js onload');
+            
+        };
+        window.onload=function(){
+            console.log('js onload2');
+            
+        };
+        // $(document).onload(function(){
+        //     console.log('jq onload');
+        // });
+        $(document).ready(function(){
+            console.log('jq ready');
+            document.querySelector('img').onload=function(){
+                console.log('이미지 로딩완료');
+            };
+        });
+        $(document).ready(function(){
+            console.log('jq ready2');
+        });
+        $(function(){
+            console.log('jq ready3');
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>이벤트</h1>
+    <img src="imgs/car.png" alt=""/>
+</body>
+</html>

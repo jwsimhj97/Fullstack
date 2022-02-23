@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        var arr=[
+            'imgs/small01.jfif',
+            'imgs/small02.jfif',
+            'imgs/small03.jfif',
+            'imgs/small04.jfif',
+            'imgs/small05.jfif',
+            'imgs/small06.jfif'
+        ];
+        $(function(){
+            $(arr).each(function(idx,ele){
+                $('<img/>').attr('src',ele).appendTo('.rolling');  
+            });
+
+            $('.rolling img').each(function(idx,ele){
+                arr2.push(ele);
+            });
+        });
+
+        function callback(){
+            // $('.rolling').html('<img src="'+arr[0]+'"/>');
+            // arr.push(arr.shift());
+            $('.rolling').html(arr2[0]);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="rolling">
+        <ul>
+            <li><img src="imgs/small01.jfif" alt=""></li>
+            <li><img src="imgs/small02.jfif" alt=""></li>
+            <li><img src="imgs/small03.jfif" alt=""></li>
+            <li><img src="imgs/small04.jfif" alt=""></li>
+            <li><img src="imgs/small05.jfif" alt=""></li>
+            <li><img src="imgs/small06.jfif" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
