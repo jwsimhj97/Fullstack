@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+        .carousel{display: none;}
+        img {width: 100%;}
+    </style>
+
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        var before1;
+        $(function(){
+            var callback=function(){
+                if(before1) $('.carousel').append(before1);
+                before1=$('.carousel li').first();
+                before1.insertBefore('.carousel');
+            }
+            setInterval(callback,1000);
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <ul class="carousel">
+            <li><img src="imgs/small01.jfif" alt=""></li>
+            <li><img src="imgs/small02.jfif" alt=""></li>
+            <li><img src="imgs/small03.jfif" alt=""></li>
+            <li><img src="imgs/small04.jfif" alt=""></li>
+            <li><img src="imgs/small05.jfif" alt=""></li>
+            <li><img src="imgs/small06.jfif" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

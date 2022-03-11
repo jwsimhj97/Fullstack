@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet" type="text/css">
+        div{width: 100px; height: 100px; background: #ff0;}
+    </style>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var callback=()=>{
+                $('div').delay(1000)
+                    .animate({marginLeft:'400px'},1000)
+                    .animate({marginTop:'400px'},1000)
+                    .animate({marginLeft:'0px'},1000)
+                    .animate({marginTop:'0px'},1000)
+            }
+            $('button')
+                .first()
+                    .click(callback)
+                .next()
+                    .click(()=>{
+                        // while($('div').queue().length)
+                        // $('div').stop();
+                        // $('div').clearQueue().stop();
+                        $('div').finish();
+                    })
+        });
+        console.log('js 메인종료');
+    </script>
+</head>
+<body>
+    <h1>애니메이션3</h1>
+    <button>start</button>
+    <button>stop</button>
+    <div></div>
+</body>
+</html>
