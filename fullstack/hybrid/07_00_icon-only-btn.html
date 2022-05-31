@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header" data-position="fixed">
+            <h1>header 영역</h1>
+            <a href="#page2" data-icon="carat-r" class="ui-btn-right">다음</a>
+        </div>
+        <div data-role="content">
+        <!-- 
+            data-iconpos 속성의 기능
+            속성값 : notext => 버튼의 문자값은 제외하고 아이콘만 표현하도록 처리
+            속성값 : top, button, left, right인 경우 아이콘의 위치 지정 
+        -->
+            <button data-icon="delete" data-inline="true">취소</button>
+            <button data-icon="check">확인</button>
+            <button data-icon="delete" data-iconpos="notext" data-inline="true">취소</button>
+            <button data-icon="check" data-iconpos="notext" data-inline="true">확인</button>
+            <button data-role="none" data-icon="refresh" data-iconpos="notext" data-inline="true">4_새로고침버튼</button>
+            <input type="button" value="5_검색버튼" data-icon="search" data-iconpos="notext">
+            <a href="#" data-role="button" data-icon="info" data-iconpos="notext">6_정보버튼</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div>
+    
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>header 영역</h1>
+            <a data-icon="carat-l" data-rel="back" class="ui-btn-left">이전</a>
+        </div>
+        <div data-role="content">
+            <button data-icon="arrow-u" data-iconpos="top">위쪽 버튼</button>
+            <button data-icon="arrow-l" data-iconpos="left">왼쪽 버튼</button>
+            <button data-icon="arrow-r" data-iconpos="right">오른쪽 버튼</button>
+            <button data-icon="arrow-d" data-iconpos="bottom">아래쪽 버튼</button>
+            <a href="#" data-role="button" data-icon="arrow-u" data-iconpos="top" data-inline="true">상</a>
+            <a href="#" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">좌</a>
+            <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">우</a>
+            <a href="#" data-role="button" data-icon="arrow-d" data-iconpos="bottom" data-inline="true">하</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <!-- <div data-role="navbar" id="navBar">
+                <ul>
+                    <li><a href="#" data-icon="home" data-iconpos="notext">홈</a></li>
+                    <li><a href="#" data-icon="arrow-u" data-iconpos="top">상</a></li>
+                    <li><a href="#" data-icon="arrow-l" data-iconpos="left">좌</a></li>
+                    <li><a href="#" data-icon="arrow-r" data-iconpos="right">우</a></li>
+                    <li><a href="#" data-icon="arrow-d" data-iconpos="bottom">하</a></li>
+                </ul>
+            </div> -->
+
+            
+            
+                <div data-role="navbar" id="navBar">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#"><i class="fas fa-arrow-up"></i></a></li>
+                        <li><a href="#"><i class="fas fa-arrow-left"></i></a></li>
+                        <li><a href="#"><i class="fas fa-arrow-right"></i></a></li>
+                        <li><a href="#"><i class="fas fa-arrow-down"></i></a></li>
+                    </ul>
+                </div> 
+           
+        </div>
+    </div>
+</body>
+</html>
+

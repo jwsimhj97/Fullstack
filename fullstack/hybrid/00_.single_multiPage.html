@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통로직</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <!-- 
+        커스템 데이터 속성
+        - 제이쿼리 모바일에서 사용하는 접두어로 data-*로 시작하는 속성임.
+        - html5의 표준속성이 아니라서 비호환 브라우저에서 해석이 안될 수 있다.(오류는 나지 않는다.)
+
+        data-role속성 data-role = "page"
+        page : 하나의 페이지로 인식
+        header : 헤더 영역으로 인식
+        content : 내용 영역으로 인식
+        footer : 꼬리말 영역으로 인식
+
+        단일 페이지 템플릿 : data-role="page" 속성이 하나인 경우
+        다중 페이지 템플릿 : data-role="page" 속성이 여러개인 경우
+
+        a태그를 이용하여 #아이디명으로 이동되는 페이지 방식 : 내부 페이지 연결 방식
+    -->
+    <div data-role="page" id="page1">
+        <div data-role="header"><h1>머리말(header) 영역</h1></div>
+        <div data-role="content">
+            <a href="#page2">페이지2</a>
+            <button onclick="location.href='#page2'">페이지2</button>
+            <button onclick="location.href='#page2'">페이지2</button>
+        </div>
+        <div data-role="footer"><h4>꼬리말(footer) 영역</h4></div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header"><h1>머리말(header) 영역</h1></div>
+        <div data-role="content"><a href="#page1">페이지1</a></div>
+        <div data-role="footer"><h4>꼬리말(footer) 영역</h4></div>
+    </div>
+</body>
+</html>
+

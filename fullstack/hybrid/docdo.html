@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1" data-title="첫번째 페이지">
+        <div data-role="header" data-theme="b">
+            <h1>독도소개 앱</h1>
+        </div>
+        <div data-role="content">
+            <p style="text-align:center;"><img src="img/dokdoImg/bgdokdo1.png" alt=""></p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page2">독도소개</a></li>
+                <li><a href="#">독도영상</a></li>
+                <li><a href="#">독도음악</a></li>
+                <li><a href="#">독도사진</a></li>
+            </ul>
+        </div>
+        
+        <div data-role="footer" data-position="fixed" data-theme="b"><h4>독도사랑_홍길동</h4></div>
+    </div>
+
+
+    <div data-role="page" id="page2" data-position="fixed" data-theme="b">
+        <div data-role="header" data-add-back-btn="true">
+            <a href="" data-rel="back" data-icon="arrow-l">처음</a>
+            <h1>독도 소개</h1>
+        </div>
+        <div data-role="content">
+            <p style="text-align:center;"><img src="img/dokdoImg/bgdokdo2.png" alt=""></p>
+            <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>독도역사</h3>
+                    <p>독도(獨島)라는 명칭은 한국어와 중국어 화자들이 일반적으로 사용한느 이름이다. 인도유럽어권에서는 리아쿠르 바위섬, 일본어권에서는 다케시마 섬이라 부른다. 20세기 조까지는 독도, 석도 또는 마쓰시마라고 불리었다. ... 생략</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>독도지리</h3>
+                    <p>독도는 주로 두 개의 섬으로 이루어지며 150 미터 떨어진 두 섬은 동도와 서도로 불린다. 약 90개의 섬과 암초로 이루어진 신생대 화산암으로 구성되어 있다. 독도는 동경 약 131 52위도 약 37 14에 위치한다. ...생략</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>독도생활</h3>
+                    <p>900명이 넘는 한국인 시민들이 이 섬에 거주하며, 실제로 영구거주를 하는 사람은 단 두 사람이다. 한국정부는 거주주장을 하기 위하여 이들에게 보조금을 지불하고 있다. ...생략</p>
+                </div>
+            </div>
+        </div><br><br>
+
+        <div data-role="footer" data-position="fixed"><h4>독도사랑_홍길동</h4></div>
+    </div>
+</body>
+</html>
+

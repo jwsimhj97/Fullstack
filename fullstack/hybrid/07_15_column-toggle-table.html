@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <!-- 
+        data-role="table" 속성
+        - table을 세로로 나열하여 헤드 부분을 반복하여 자동으로 붙여준다.
+
+        .ui-responsive 속성
+        - 디바이스의 너비에 따라 가로/세로 목록으로 자동 조정해주는 기능을 한다.
+        단, data-mode="columntoggle" 속성이 들어가면 세로 목록 조정이 안됨.
+        사이즈가 작아질 경우 data-mode="columntoggle" 속성값이 체크된 목록에 대해서만 보여지게 된다.
+
+        .table-stripe 속성
+        - 테이블의 행이 구분되어 보여지도록 한 줄 건너띄어 줄 색을 넣어준다.
+
+        data-mode="columntoggle" 속성
+        - th태그의 값을 자동으로 선택가능한  toggle가능한 컬럼으로 만든다.
+
+        data-priority="2" 속성
+        - 사이즈가 작아질 경우 남길 컬럼의 우선순위를 지정하는 속성
+        - 속성값은 1~6까지 가능(중복 순위 가능)
+        - 1위가 끝까지 남아있는 컬럼이 되며, 6위가 가장 먼저 사라지는 컬럼이 된다.
+        - data-priority 속성이 기술되지 않은 컬럼은 고정적으로 보여지게 된다.
+        - 반드시 data-mode="columntoggle" 속성과 class="ui-responsive" 속성이 있어야만 적용 가능.
+     -->
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header영역</h1>
+            <a href="#page2" class="ui-btn-right" data-icon="carat-r">다음</a>
+        </div>
+        <div data-role="content">
+            <table data-role="table" class="ui-responsive table-stripe">
+                <thead>
+                    <tr>
+                        <th data-priority="2">학년</th>
+                        <th>이름</th>
+                        <th data-priority="3">성별</th>
+                        <th data-priority="1">성적</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>홍길동</td>
+                        <td>남</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>신나라</td>
+                        <td>여</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>홍미미</td>
+                        <td>여</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+    
+    <div data-role="page" id="page2">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="이전">
+            <h1>header영역</h1>
+        </div>
+        <div data-role="content">
+            <table data-role="table" class="ui-responsive table-stripe" data-mode="columntoggle">
+                <thead>
+                    <tr>
+                        <th data-priority="2">학년</th>
+                        <th>이름</th>
+                        <th data-priority="3">성별</th>
+                        <th data-priority="1">성적</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>홍길동</td>
+                        <td>남</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>신나라</td>
+                        <td>여</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>홍미미</td>
+                        <td>여</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+</body>
+</html>
+

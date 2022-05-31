@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 
+        리스트 구분자 속성
+        형식 : data-role="listvider"
+        해당 리스트의 제목 역할을 하거나 목록간의 그룹화 제목 역할을 함.
+     -->
+    <div data-role="page">
+        <div data-role="header"><h1>header 영역</h1></div>
+        <div data-role="content">
+            <p>content영역</p><br>
+            <ul data-role="listview">
+                <li data-role="listdivider">ㄱ</li>
+                <li><a href="#">강</a></li>
+                <li data-role="listdivider" data-divider-theme="b">ㅅ</li>
+                <li><a href="#">산</a></li>
+                <li><a href="#">산마루</a></li>
+                <li data-role="listdivider">ㅎ</li>
+                <li><a href="#">하늘</a></li>
+            </ul><br><br>
+
+            
+            <ul data-role="listview" data-inset="true">
+                <li data-role="listdivider">박물관 종류</li>
+                <li><a href="#">자연사박물관</a></li>
+                <li><a href="#">등대박물관</a></li>
+                <li><a href="#">공룡박물관</a></li>
+                <li><a href="#">하늘박물관</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+

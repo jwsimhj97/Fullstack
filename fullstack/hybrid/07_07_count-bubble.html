@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 
+        카운트버블 기능 : 
+        리스트안의 내용의 갯수가 몇 개인지 혹은 조회수 카운트 등을 나타낼 때 사용한다.
+        자동으로 우측정렬 속성을 가지고 있다.
+        카운트버블 속성은 요소를 인라인화 시킨다.
+
+        data-count-theme는 카운트버블의 테마 성격을 변경하는 속성이다.
+        a, b, c 세가지 테마가 있다. 디폴트 
+     -->
+    <div data-role="page">
+        <div data-role="header"><h1>header 영역</h1></div>
+        <div data-role="content">
+            <h3>content영역</h3>
+            <ul data-role="listview" data-inset="true" data-count-theme="c">
+                <li><a href="#">리스트1<div class="ui-li-count">5</div></a></li>
+                <li><a href="#">리스트2<span class="ui-li-count">17</span></a></li>
+                <li><a href="#">리스트3<span class="ui-li-count">hot</span></a></li>
+                <li><a href="#">리스트4<span class="ui-li-count">new</span></a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+    <!-- 
+        패널에는 header, content, footer 영역을 나누지 않아도 된다.
+        별도로 기술은 가능하나 header영역은 너비 100%가 아닌 content영역의 내용처럼 인식된다.
+
+        data-role="panel" 속성
+        - 숨김 패널을 만드는 속성(숨어있다가 나타나는 패널)
+        - 반드시 data-role="page" 속성안에 포함시켜야 하며,
+        페이지내의 header, content, footer안에 넣으면 안된다. (별도로 분리해야 함.)
+
+        data-position="right" 속성
+        - 패널이 열리는 위치. 기본은 left임.
+
+        data-display="overlay" 속성
+        - 원래 화면 위에 패널이 표현되어지도록 해주는 속성
+
+        data-clear-btn="true" 속성
+        -input 요소의 내용을 전부 지우는 기능을 해주는  X버튼을 제공해준다.
+
+        data-rel="close" 속성
+        패널의 close기능을 제공해준다. (패널 숨김 기능)
+        닫는 기능을 제공하는 것이지 X표시를 해주는 것은 아님.
+
+
+
+        그리드 레이아웃(Grid Layout) = 격자(바둑판) 형태
+        .ui-grid-* (*부분에 들어올 수 있는 값 : a~d)
+        - .ui-block-*의 속성 갯수에 따라 한 줄에 표현해줄 갯수를 정하는 속성임.
+        - .ui-block-*의 속성 갯수 보다 한 개 적은 갯수에 해당되는 알파벳으로 값을 지정해야 한다.
+
+        .ui-block-* (*부분에 들어올 수 있는 값 : a~e)
+        - inline으로 만들어 주는 속성임.
+        - 반드시 맨 처음의 요소를 a부터 지정하며 인접된 순서대로 a,b,c,d,...순으로 순서대로 부여해야한다.
+        - 자동으로 균일 사이즈로 조정함.
+        (순서가 달라질 경우 적용 안됨. a는 맨처음으로 지정됨. 단 b부터는 여러개 가능)
+
+     -->
+    
+     
+    <div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+        <form action="">
+            <h3>로그인 패널</h3>
+            <label for="name">사용자명 : </label>
+            <input name="name" id="name" type="text" value="" data-mini="true" data-clear-btn="true">
+            <label for="password">비밀번호 : </label>
+            <input name="password" id="password" type="password" value="" data-mini="true" data-clear-btn="true">
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="#" data-role="button" data-rel="close">취소</a></div>
+                <div class="ui-block-b"><a href="#" data-role="button" data-rel="close">저장</a></div>
+            </div>
+        </form>
+    </div>
+
+    <div data-role="panel" id="panel2" data-display="overlay">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">메뉴 패널 종료</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+    </div>
+
+    <div data-role="panel" id="panel3" data-display="overlay" data-position="right">
+        <h3>패널 메모</h3>
+        <p>오른쪽 메모 패널 영역입니다.</p>
+        <a href="#page1" data-role="button" data-rel="close" data-inline="true">패널 종료</a>
+    </div>
+
+    <div data-role="header"><h1>header영역</h1></div>
+    <div data-role="content">
+        <a href="#panel1" data-role="button" data-inline="true">로그인 널</a>
+        <a href="#panel2" data-role="button" data-inline="true">메뉴 패널</a>
+        <a href="#panel3" data-role="button" data-inline="true">메모 패널</a>
+    </div>
+    <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+</body>
+</html>
+

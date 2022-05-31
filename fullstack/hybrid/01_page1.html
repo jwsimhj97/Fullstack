@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통로직</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header"><h1>상단 영역</h1></div>
+        <div data-role="content">
+            <!-- 외부파일의 외부 링크 연결 -->
+            <a href="01_page2.html#page2" data-ajax="false">2번 페이지로 이동</a>
+            <!-- 외부파일의 내부 링크 연결 -->
+            <a href="01_page3.html">3번 페이지로 이동</a>
+        </div>
+        <div data-role="footer"><h4>하단 영역</h4></div>
+    </div>
+</body>
+</html>
+

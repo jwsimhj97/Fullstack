@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <fieldset data-role="controlgroup">
+                <legend>학년</legend>
+                <input type="radio" name="s_year" id="s_year1" value="1">
+                <label for="s_year1">1학년</label>
+                <input type="radio" name="s_year" id="s_year2" value="2">
+                <label for="s_year2">2학년</label>
+                <input type="radio" name="s_year" id="s_year3" value="3" checked="checked"/>
+                <label for="s_year3">3학년</label>
+                <input type="radio" name="s_year" id="s_year4" value="4">
+                <label for="s_year4">4학년</label>
+            </fieldset>
+            
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>학기</legend>
+                <input type="radio" name="semester" id="semester1" value="1" checked="checked">
+                <label for="semester1">1학기</label>
+                <input type="radio" name="semester" id="semester2" value="2">
+                <label for="semester2">2학기</label>
+            </fieldset>
+            
+            <fieldset data-role="controlgroup">
+                <legend>성별</legend>
+                <input type="checkbox" name="gtype1" id="gtype1" value="m" checked="checked">
+                <label for="gtype1">남성</label>
+                <input type="checkbox" name="gtype2" id="gtype2" value="f">
+                <label for="gtype2">여성</label>
+            </fieldset>
+            
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>성별</legend>
+                <input type="checkbox" name="gtype3" id="gtype3" value="m" checked="checked">
+                <label for="gtype3">남성</label>
+                <input type="checkbox" name="gtype4" id="gtype4" value="f">
+                <label for="gtype4">여성</label>
+            </fieldset>
+        </div>
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>
+

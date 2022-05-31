@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1" data-position="fixed">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <!-- 
+                data-role="collapsible-set" 속성
+                - data-role="collapsible" 속성을 그룹화하는 속성임.
+                - data-role="collapsible" 속성을 가진 탭 하나가 확장되면 나머지는 자동으로 접하게 된다.
+
+                data-collapsed="false" 속성
+                - 해당 속성이 기술된 collapsible 속성은 페이지 로딩시 펼쳐진 상태로 보여지게 된다.
+
+                data-content-theme="a" 속성
+                접이식 패널의 컨텐츠(내용)부분의 테마를 설정할때 사용한다.
+                지정하지 않으면 data-role="collapsible-set" 요소의 data-theme 속성을 그대로 상속 받는다.
+                -data-role="collapsible-set" 속성과 나란히 기술할 경우 묶어있는 data-role="collapsible"속성의 컨텐츠 부분 모두 적용됨. data-role="collapsible" 속성과 나란히 묶여있는 경우 해당 data-role="collapsible" 속성의 컨텐츠 부분에만 적용됨.
+            -->
+            <p>그룹 팝넬</p>
+            <div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h3>접이식 패널1</h3>
+                    <p>패널 내용1</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>접이식 패널2</h3>
+                    <p>패널 내용2</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>접이식 패널3</h3>
+                    <p>패널 내용3</p>
+                </div>
+            </div>
+        </div><br><br>
+
+        
+        <p>일반 팝넬</p>
+        <div data-role="collapsible" data-collapsed="false">
+            <h3>접이식 패널1</h3>
+            <p>패널 내용1</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>접이식 패널2</h3>
+            <p>패널 내용2</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>접이식 패널3</h3>
+            <p>패널 내용3</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>
+

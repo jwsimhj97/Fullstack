@@ -1,0 +1,17 @@
+<!-- 
+    html, body태그가 어ㅏㅄ어도 내부링크로 연결되어 온 경우
+    제이쿼리 모바일은 이전페이지에 이어져 있는 DOM객체로 인식을 하므로 
+    태그 생략이 되어도 가능하다.
+ -->
+<meta charset="UTF-8">
+<div data-role="page" id="page3">
+    <div data-role="header"><h1>세번째 페이지 상단영역</h1></div>
+    <div data-role="content">
+        <!-- 외부파일의 내부 링크 연결 -->
+        <a href="01_page1.html" data-ajax="false">첫번째 페이지로 이동</a>
+        <!-- 외부파일의 내부 링크 연결 -->
+        <a href="https://m.naver.com/index.html" target="_blank">네이버로 가기</a>
+    </div>
+    <div data-role="footer"><h4>세번째 페이지 하단영역</h4></div>
+</div>
+

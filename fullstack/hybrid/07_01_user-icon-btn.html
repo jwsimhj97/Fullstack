@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        .ui-icon-my-icon:after{background-image: url("img/buttonicon1.png"); background-size: 18px 18px;}
+    </style>
+</head>
+<body>
+    <!-- 
+        사용자 정의 아이콘 (커스텀 아이콘)
+        형식 : data-icon="아이콘이름"
+        css style 속성으로 해당 아이콘 저장하기.
+        클래스명으로 아이콘 이름을 넣을 떄 접두어(ui-icon) 붙이기
+        형식 : .ui-icon-아이콘이름:after { ...css내용 기술... }
+
+        아이콘이미지 만들때 참고할 점
+        18*18 픽셀정도의 배경이 흰색이거나 토명도가 처리된 png파일로 만들것(PNG-8)
+        36*36 필셀로 할 경우 보다 선명하게 보일 수 있으나 css에서 background-size를 18px * 18px로 지정해주어야 한다.
+
+        무료 아이콘 50개 정도 지원되는 사이트 : https://www.glyphish.com/
+     -->
+
+
+
+    <div data-role="page">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <button data-icon="my-icon">사용자지정의 아이콘1</button>
+            <input type="button" value="사용자지정의아이콘2" data-icon="my-icon">
+            <a href="#" data-role="button" data-icon="my-icon">사용자지정의아이콘3</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
+

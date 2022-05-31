@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <form>
+                <!-- 
+                    data-role="fieldcontain" 속성
+                    - label과 form요소를 그룹화하는 역할을 함.
+                    - label과 form요소의 영역을 나누어 표현하므로 content안에서 블럭레벨로 변경되어 width를 100%로 인식하던 부분들이 일정 너비를 부여받은 인라인레벨 요소로 성격이 변경됨.
+                 -->
+                <div data-role="fieldcontain">
+                    <label for="input1">비밀번호</label>
+                    <input type="password" name="input1" id="input1" placeholder="패스워드를입력하세요">
+                    <label for="input2">숫자입력</label>
+                    <input type="number" name="input2" id="input2" placeholder="숫자를 입력하세요">
+                    <label for="input3">이메일입력</label>
+                    <input type="email" name="input3" id="input3" placeholder="이메일을 입력하세요">
+                </div><br><br>
+                
+                <label for="input4">전화번호입력</label>
+                <input type="tel" name="input4" id="input4" placeholder="전화번호를 입력하세요">
+                <!-- .ui-hidden-accessible : 레이블 생략가능 -->
+                <label for="input5" class="ui-hidden-accessible">검색</label>
+                <input type="search" name="input5" id="input5" placeholder="키워드를 입력하세요">
+                <!-- textarea태그는 자동확장기능이 있어 스크롤이 생기지 않는다. -->
+                <textarea name="input6" id="input6" cols="30" rows="10" placeholder="키워드를 입력하세요"></textarea>
+            </form>
+        </div>
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <!-- 제이쿼리 모바일, 제이쿼리 라이브러리 파일 -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+
+    <!-- jqPloat 기본 라이브러리 파일 -->
+    <link rel="stylesheet" href="jqplot/jquery.jqplot.min.css"/>
+    <script src="jqplot/jquery.jqplot.min.js"></script>
+
+    <!-- jqPlot 바차트 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.barRenderer.min.js"></script>
+    <!-- jqPlot 카테고리(바 표시) 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <!-- jqPlot x축, y축 라벨 표시 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script src="jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+    <!-- jqPlot 포인트 라벨(범례) 표시 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.pointLabels.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var s1 = [631, 217, 754, 1008];
+            var ticks = ['1분기', '2분기', '3분기', '4분기'];
+
+            plot1 = $.jqplot('chartdiv', [s1],{
+                title: '막대 그래프 예제1',
+                seriesDefaults: {
+                    // BarRenderer : 막대 모양으로 표시하기 위한 렌더러
+                    renderer : $.jqplot.BarRenderer,
+                    // 막대마다 끝에 수치값을 표시
+                    pointLabels: {show:true}
+                    // rendererOptions: {
+                    //     smooth: true    //곡선
+                    // }
+                },
+                axes: {
+                    xaxis: {
+                        // CategoryAxisRenderer : y축 데이터 값들 사이의 일정한 간격유지
+                        renderer: $.jqplot.CategoryAxisRenderer,
+                        ticks: ticks,
+                        label: '분기',
+                        // canvasTextRenderer: x축 라벨표시
+                        labelRenderer: $.jqplot.canvasTextRenderer
+                    },
+                    yaxis: {
+                        // canvasAxisLabelRenderer : y축 라벨표시
+                        labelRenderer : $.jqplot.canvasAxisLabelRnderer,
+                        label: '매출액'
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header"><h1>header영역</h1></div>
+        <div data-role="content">
+            <!-- 차트 표시 영역 -->
+            <div id="chartdiv" style="height:400px; width:300px;"></div>
+        </div>
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    
+</head>
+<body>
+    <!-- 
+        data-role="tabs" 속성
+        - 페이지 내에서(data-role="page") 탭 속성을 구현한다.
+        - 반드시 <div data-role="tabs"></div> 사이에 탭 버튼과 탭 내용이 들어가야한다.
+        - 탭 버튼은 반드시 <ul><li><a href="#아이디명"></a></li></ul> 순으로 기술되어야 한다.
+        - 탭에 대응되는 내용의 요소에는 id="아이디명"을 기술해주어야 한다.
+
+        형식 :
+        <div data-role="tabs">
+            <ul>
+                <li><a href="#아이디명">탭1</a></li>
+                ...
+            </ul>
+
+            <div id="아이디명" style="background-color:green">
+                <h1>첫번째 탭 내용</h1>
+            </div>
+            ...
+        </div>
+
+        content영역의 data-role="navbar" 속성값의 변화
+        width는 너비 100%가 아닌 좌우여백을 갖는다.
+        이외에는 동일
+     -->
+    <div data-role="page">
+        <div data-role="header">
+            <h1>header영역</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="tabs">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tab1">탭1</a></li>
+                        <li><a href="#tab2">탭2</a></li>
+                        <li><a href="#tab3">탭3</a></li>
+                    </ul>
+                </div>
+                <div id="tab1" style="background-color: green;">
+                    <h1>첫번째 탭 내용</h1>
+                </div>
+                <div id="tab2" style="background-color: yellow;">
+                    <h1>두번째 탭 내용</h1>
+                </div>
+                <div id="tab3" style="background-color: pink;">
+                    <h1>세번째 탭 내용</h1>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+
+    
+    <div data-role="page" id="page2" data-title="두번째 페이지">
+        <div data-role="header" data-add-back-btn="true">
+            <a href="" data-rel="back">이전</a>
+            <h1>페이지2</h1>
+            <a href="#page3" data-icon="home" class="ui-btn-right">페이지3</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li data-role="list-divider">분리자
+                    <p class="ui-li-aside">2014/09/01</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/listimg.png" alt="">
+                        <h3>쿵푸팬더</h3>
+                        <p>등급: 12세관람가</p>
+                        <p>상영시간: 95분</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/listimg.png" alt="">
+                        <h3>쿵푸팬더</h3>
+                        <p>등급: 12세관람가</p>
+                        <p>상영시간: 95분</p>
+                    </a>
+                </li>
+                <li data-role="list-divider">분리자
+                    <p class="ui-li-aside">2014/09/01</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/listimg.png" alt="">
+                        <h3>쿵푸팬더</h3>
+                        <p>등급: 12세관람가</p>
+                        <p>상영시간: 95분</p>
+                        <p class="ui-li-aside">추가설명1</p>
+                        <span class="ui-li-count">5</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#page1">페이지1</a>
+                <a href="#page2">페이지2</a>
+                <a href="#page3">페이지3</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div data-role="page" id="page3" data-title="세번째 페이지">
+        <div data-role="header" data-add-back-btn="true">
+            <h1>페이지3</h1>
+            <a href="#page1" data-icon="home" class="ui-btn-right">홈</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li data-role="list-divider">분리자
+                    <p class="ui-li-aside">2013/12/01</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="ui-li-icon" src="img/listicon2.png" alt="">
+                        <h3>6PM</h3>
+                        <span class="ui-li-saide">생일파티</span>
+                        <span class="ui-li-count">10</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="ui-li-icon" src="img/listicon2.png" alt="">
+                        <h3>6PM</h3>
+                        <span class="ui-li-count">10</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#page1">페이지1</a>
+                <a href="#page2">페이지2</a>
+                <a href="#page3">페이지3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

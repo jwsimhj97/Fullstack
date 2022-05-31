@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <!-- 제이쿼리 모바일, 제이쿼리 라이브러리 파일 -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+
+    <!-- jqPloat 기본 라이브러리 파일 -->
+    <link rel="stylesheet" href="jqplot/jquery.jqplot.min.css"/>
+    <script src="jqplot/jquery.jqplot.min.js"></script>
+
+    <!-- jqPlot 바차트 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.barRenderer.min.js"></script>
+    <!-- jqPlot 카테고리(바 표시) 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <!-- jqPlot x축, y축 라벨 표시 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.canvasTextRenderer.min.js"></script>
+    <script src="jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+    <!-- jqPlot 포인트 라벨(범례) 표시 플러그인 파일 -->
+    <script src="jqplot/plugins/jqplot.pointLabels.min.js"></script>
+
+    <style>
+        .jqplot-table-legend {width: 15%;}
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            var s1 = [20, 40, 60, 30];
+            var s2 = [50, 10, 30, 40];
+            var ticks = ['1학년', '2학년', '3학년', '4학년'];
+
+            plot1 = $.jqplot('chartdiv', [s1, s2],{
+                title: '막대 그래프 예제2',
+                seriesDefaults: {
+                    renderer : $.jqplot.BarRenderer,
+                    pointLabels: {show:true},
+                    // shadowAngle : 각도값(0~360) => 막대그래프의 그림자 각도 지정
+                    shadowAngle: 135,
+                    rendererOptions: {
+                        // barDirection 바 표시 방향지정. 디폴트 수직(vertical)
+                        barDirection: 'horizontal',
+                        highlightMouseDown: true
+                    }
+                },
+                series: [
+                    {label : '남학생'},
+                    {label : '여학생'}
+                ],
+                // legned 범례박스 지정옵션
+                legend:{
+                    show: true,
+                    // location => 박스의 외부 범례옵션 위치 지정. 디폴트는 외부 상단 지점
+                    // location속성 값 e(동), w(서), s(남), n(북), se(남동)...
+                    // location: 'e',
+                    // placement: 'oustside' 영역 밖에 범례옵션이 표시됨. 디폴트 영역의 우측 상단
+                    // placement: 'outside'
+                },
+                axes: {
+                    yaxis: {
+                        renderer: $.jqplot.CategoryAxisRenderer,
+                        ticks: ticks
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header"><h1>header영역</h1></div>
+        <div data-role="content">
+            <!-- 차트 표시 영역 -->
+            <div id="chartdiv" style="height:400px; width:300px;"></div>
+        </div>
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>

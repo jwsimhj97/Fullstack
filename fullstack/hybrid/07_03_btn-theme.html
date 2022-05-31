@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-page-theme-m .ui-btn, html .ui-bar-m .ui-btn, html .ui-body-m .ui-btn, html body .ui-group-theme-m .ui-btn, html head+body .ui-btn.ui-btn-m, .ui-page-theme-m .ui-btn:visited, html .ui-bar-m .ui-btn:visited, html .ui-body-m .ui-btn:visited, html body .ui-group-theme-m .ui-btn:visited, html head+body .ui-btn.ui-btn-m:visited {background-color: blueviolet; border-color: blueviolet; color:#fff; text-shadow: none;}
+    </style>
+</head>
+<body>
+    <!-- 
+        data-theme는 두 가지이다.
+        버튼, 컴텐츠영역 등 다양한 곳에 이용 가능
+            a => 밝은 테마
+            b => 어두운 테마
+     -->
+
+    <div data-role="page">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <button>버튼1(기본)</button>
+            <button data-theme="m">버튼2(m-테마)</button>
+            <button data-theme="a">버튼2(a-테마)</button>
+            <input type="button" value="버튼3(b-테마)" data-theme="b">
+            <input type="text" value="입력창(기본)">
+            <input type="text" value="입력창(a-테마)" data-theme="a">
+            <input type="text" value="입력창(b-테마)" data-theme="b">
+            <a href="#" data-role="button" data-theme="b">버튼4(b-테마)</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer 영역</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
+

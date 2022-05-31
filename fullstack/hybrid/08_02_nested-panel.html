@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1" data-position="fixed">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="content">
+            <!-- 
+                data-collapsed-icon="carat-r" 속성
+                - 닫혀있을 때 나타나는 icon속성 지정
+                data-expended-icon="carat-d" 속성
+                - 확장했을 때 나타나는 icon속성 지정
+
+                carat-* (l:left/ r:right/ u:up/ d:down) : 캐롯 방향지정
+            -->
+            <div data-role="collapsible" data-collapsed-icon="carat-r" data-expended-icon="carat-d">
+                <h3>상위 접이식 패널제목</h3>
+                <p>패널 내용</p>
+                <div data-role="collapsible">
+                    <h3>상위 접이식 패널제목</h3>
+                    <p>패널 내용</p>
+                    <div data-role="collapsible">
+                        <h3>상위 접이식 패널제목</h3>
+                        <p>패널 내용</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>
+

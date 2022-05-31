@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트페이지 링크 처리법</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header"><h1>스마트페이지 링크 처리법</h1></div>
+        <div data-role="content">
+            <p>외부 프로그램 링크</p>
+            <ul data-role="listview" data-insert="true">
+                <li><a href="mailto:ikaros_ala@naver.com">이메일링크</a></li>
+                <li><a href="tel:01029952928" target="_blank">전화번호링크</a></li>
+                <li><a href="sms:01029952928" target="_blank">문자링크</a></li>
+                <li><a href="http://maps.google.com/maps?q=37.511611,127.098293&h1=ko" target="_blank">위성좌표링크</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <a href="00_.single_multiPage.html" data-icon="grid" rel="external">Index</a>
+        </div>
+    </div>
+</body>
+</html>
+

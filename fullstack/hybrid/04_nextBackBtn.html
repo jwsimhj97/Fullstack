@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트페이지 링크 처리법</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <style>
+        div.ui-bar{text-align: center;}
+    </style>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>스마트페이지 링크 처리법</h1>
+            <a href="#page2" data-icon="carat-r">다음</a>
+            <!-- <a href="#page2" data-icon="carat-r" class="ui-btn-right">다음</a> -->
+        </div>
+        <div data-role="content">
+            <h2>외부 프로그램 링크</h2>
+            <ul data-role="listview" data-insert="true">
+                <li><a href="mailto:ikaros_ala@naver.com">이메일링크</a></li>
+                <li><a href="tel:01029952928" target="_blank">전화번호링크</a></li>
+                <li><a href="sms:01029952928" target="_blank">문자링크</a></li>
+                <li><a href="http://maps.google.com/maps?q=37.511611,127.098293&h1=ko" target="_blank">위성좌표링크</a></li>
+                <li><a href="http://maps.google.com/maps?q=대한민국+서울특별시+강남구+삼성1동+159-1&h1=ko" target="_blank">주소링크</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <p>푸터 영역입니다.</p>
+        </div>
+    </div>
+    
+    <div data-role="page" id="page2">
+        <!-- 
+            data-add-back-btn="true" 뒤로가기 버튼 생성. 왼쪽에 a태그가 있는 경우 무시됨.
+            header영역에 data-add-back-btn="true" 속성을 적용하고 한 개의 a태그만 존재할 경우에는
+            반드시 해당 a태그에 class="ui-btn-right"를 기술해 주어야한다.
+            data-rel="back" 
+        -->
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="이전">
+            <h1>스마트페이지 링크 처리법</h1>
+            <!-- <a data-icon="carat-l" data-rel="back" class="ui-btn-left">이전으로</a> -->
+            <a href="#page3" data-icon="carat-r" class="ui-btn-right">다음</a>
+            <!-- <a href="#page3" data-icon="carat-r">다음</a> -->
+        </div>
+        <div data-role="content">
+            <h2>두번째 페이지</h2>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <a href="#home" data-icon="home">홈으로</a>
+        </div>
+    </div>
+
+    
+    <div data-role="page" id="page3">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="이전">
+            <h1>스마트페이지 링크 처리법</h1>
+            <a href="#home" data-icon="home" class="ui-btn-right">홈으로</a>
+        </div>
+        <div data-role="content">
+            <h2>세번째 페이지</h2>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <a href="#home" data-icon="home">홈으로</a>
+        </div>
+    </div>
+</body>
+</html>
+

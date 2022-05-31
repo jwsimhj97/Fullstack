@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        .home {text-indent: -9999px;}
+        .ui-header .home.ui-btn-icon-left:after {left: 50%; transform: translateX(-50%);}
+
+        .btnBox {overflow: hidden;}
+        .btnBox > a {width: 48%; float: left; margin-right: 2%; padding: 0.7em 0;}
+        .btnBox > a:last-child {margin-right: 0;}
+
+        .ta_R {text-align: right;}
+
+        .library_searchBox .ui-listview > li {border: 0;}
+        .library_searchBox .ui-listview > li > p {font-size: 18px;}
+        .search_inputBox {position: relative;}
+        .search_icon {position: absolute; left: 0; top: 0; left: 10px; top: 50%; transform: translateY(-50%);}
+        .search_input {text-indent: 30px;}
+        .ui-input-text, .ui-input-search {margin: 0;}
+    </style>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" data-theme="b">
+            <h1>도서 정보 관리</h1>
+            <a href="#home" data-icon="home" class="home ui-btn-right">홈</a>
+        </div>
+        <div data-role="content" data-theme="a">
+            <div><img src="img/book.jpg" alt=""></div>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">도서 정보 추가</a></li>
+                <li><a href="#">도서 정보 갱신</a></li>
+                <li><a href="#">도서 정보 삭제</a></li>
+                <li><a href="#page2">전체 도서 조회</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>Book n Book Library</h4>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <div data-role="page" id="page2">
+        <div data-role="header" data-theme="b">
+            <h1>도서 정보</h1>
+            <a href="#home" data-icon="back" class="ui-btn-left">Back</a>
+            <a href="#home" data-icon="home" class="home ui-btn-right">홈</a>
+            <div data-role="navbar" id="navBar">
+                <ul>
+                    <li><a href="#">업적</a></li>
+                    <li><a href="#">수정</a></li>
+                    <li><a href="#">삭제</a></li>
+                    <li><a href="#">전체검색</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <h4>도서 내용 검색</h4>
+            <div class="library_searchBox">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <div data-role="controlgroup" data-type="horizontal" class="ta_R">
+                            <a href="#" data-role="button">|&lt;</a>
+                            <a href="#" data-role="button">&lt;</a>
+                            <a href="#" data-role="button">&gt;</a>
+                            <a href="#" data-role="button">&gt;|</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p>검색도서명:</p>
+                        <p class="search_inputBox"><i class="search_icon fas fa-search"></i><input type="text" class="search_input"></p>
+                        
+                    </li>
+                    <li>
+                        <p>장르</p>
+                        <p><input type="text"></p>
+                    </li>
+                    <li>
+                        <p>도서명</p>
+                        <p><input type="text"></p>
+                    </li>
+                </ul>
+            </div><br>
+
+            <div class="btnBox">
+                <a data-role="button" href="#" data-inline="true">취소</a>
+                <a data-role="button" href="#" data-inline="true">검색</a>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>Book n Book Library</h4>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+    <!-- 
+        data-role="collapsible" 속성
+        일반 접이식 패널 : 아코디언 기능
+
+        형식:
+        <div data-role="collapsible">
+            ...내용 기술...
+            내용에서 title이 되는 곳으 h태그로 기술
+            => title 부분은 반드시 h태그만 사용 가능.
+            내용 부분이 되는 곳은 되도록 p태그로 기술해준다.(권장)
+            => 내용 부분은 span, p, h태그 모두 사용 가능.
+        </div>
+    -->
+    <div data-role="page" id="page1" data-position="fixed">
+        <div data-role="header">
+            <h1>header 영역</h1>
+        </div>
+        <div data-role="collapsible">
+            <h3>접이식 패널제목</h3>
+            <p>패널 내용</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>접이식 패널제목</h3>
+            <h6>일반제목</h6>
+            <p>패널 내용</p>
+        </div>
+        <div data-role="footer" data-position="fixed"><h4>footer영역</h4></div>
+    </div>
+</body>
+</html>
+

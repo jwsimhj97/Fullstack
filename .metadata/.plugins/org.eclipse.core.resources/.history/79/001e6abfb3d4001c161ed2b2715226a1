@@ -1,0 +1,17 @@
+package com.hi;
+
+import java.util.Scanner;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		java.util.Scanner sc = new Scanner(System.in);
+		
+		int input = 0;
+		input = sc.nextInt();
+		
+		int kor, eng, math = 0;
+		
+	}
+
+}

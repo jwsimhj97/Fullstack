@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘 버튼</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <style>
+        /* img {width: 30px !important;} */
+    </style>
+</head>
+<body>
+    <!-- 
+       data-filter="true"
+       form의 input type="search" 요소에 돋보기 모양 아이콘과 필터 기능이 추가된 속성임.
+       별도로 설정하지 않아도 data-filter="true"가 기술된 요소가 감싸고 있는 컨텐츠 내에서
+       자신이 자동으로 검색어에 따라 걸러내는 작업을 한다.
+
+       data-filter-placeholder="검색키워드를 입력하세요"
+       input 요소 내 placeholder의 기능과 동일함. 보조 키워드 가능.
+     -->
+    <div data-role="page">
+        <div data-role="header"><h1>header 영역</h1></div>
+        <div data-role="content">
+            <p>content영역</p>
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="검색키워드를 입력하세요">
+                <li data-role="listdivider">ㄱ<span class="ui-li-count">3</span></li>
+                <li><a href="#">강</a></li>
+                <li><a href="#">강둑</a></li>
+                <li><a href="#">강물</a></li>
+                <li data-role="listdivider">ㅂ<span class="ui-li-count">2</span></li>
+                <li><a href="#">바다</a></li>
+                <li><a href="#">바다새</a></li>
+                <li data-role="listdivider">ㅎ<span class="ui-li-count">1</span></li>
+                <li><a href="#">하늘</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer영역</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+

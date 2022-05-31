@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트페이지 링크 처리법</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        body, html {padding:0; margin: 0;}
+        div.footer {background-color: #e9e9e9; text-align: center; padding: 0; margin: 0; width: 100%; height: 61.15px;}
+        div.vLine {padding: 20px 0; border-right: 0.5px solid #555;}
+        div.vLineLast {padding: 20px 0;}
+        div.aBtn {float: left; display: inline-block; width: 25% !important; margin: 0; color:#555;}
+        div.aBtn:hover {color:#ff0; background-color: #555; cursor: pointer; text-shadow: none !important;}
+        div#navBar a {padding: 20px 0;}
+        li {list-style: none;}
+    </style>
+    <script>
+        function btnFnc(num){
+            switch(num){
+                case 1: location.href="#home"; break;
+                case 2: location.href="#page2"; break;
+                case 3: location.href="#page3"; break;
+                default : location.href="#page4";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <a href="#home" data-icon="home">홈으로</a>
+            <h1>스마트페이지 링크 처리법</h1>
+            <a href="#page2" data-icon="carat-r">다음</a>
+        </div>
+        <div data-role="content">
+            <h2>외부 프로그램 링크</h2>
+            <ul data-role="listview" data-insert="true">
+                <li><a href="mailto:ikaros_ala@naver.com">이메일링크</a></li>
+                <li><a href="tel:01029952928" target="_blank">전화번호링크</a></li>
+                <li><a href="sms:01029952928" target="_blank">문자링크</a></li>
+                <li><a href="http://maps.google.com/maps?q=37.511611,127.098293&h1=ko" target="_blank">위성좌표링크</a></li>
+                <li><a href="http://maps.google.com/maps?q=대한민국+서울특별시+강남구+삼성1동+159-1&h1=ko" target="_blank">주소링크</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" class="ui-bar footer" data-position="fixed">
+            <a href="#home">버튼1</a>
+            <a href="#page2">버튼2</a>
+            <a href="#page3">버튼3</a>
+            <a href="#page4">버튼4</a>
+        </div>
+    </div>
+    
+    <div data-role="page" id="page2">
+        <div data-role="header" >
+            <a href="#home" data-icon="home">홈으로</a>
+            <h1>스마트페이지 링크 처리법</h1>
+            <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+                <a href="#home" class="ui-btn ui-icon-carat-l ui-btn-icon-left">이전</a>
+                <a href="#page3" class="ui-btn ui-icon-carat-r ui-btn-icon-right">다음</a>
+            </div>
+        </div>
+        <div data-role="content">
+            <h2>두번째 페이지</h2>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#home">버튼1</a>
+                <a href="#page2">버튼2</a>
+                <a href="#page3">버튼3</a>
+                <a href="#page4">버튼4</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <a href="#home" data-icon="home">홈으로</a>
+            <h1>스마트페이지 링크 처리법</h1>
+            <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right">
+                <a href="#page2" class="ui-btn ui-icon-carat-l ui-btn-icon-left">이전</a>
+                <a href="#page4" class="ui-btn ui-icon-carat-r ui-btn-icon-right">다음</a>
+            </div>
+        </div>
+        <div data-role="content">
+            <h2>세번째 페이지</h2>
+        </div>
+        <div data-role="footer" class="ui-bar footer" data-position="fixed">
+            <div class="aBtn" onclick="btnFnc(1)"><div class="vLine"><i class="fas fa-home"></i></div></div>
+            <div class="aBtn" onclick="btnFnc(2)"><div class="vLine">버튼2</div></div>
+            <div class="aBtn" onclick="btnFnc(3)"><div class="vLine">버튼3</div></div>
+            <div class="aBtn" onclick="btnFnc(4)"><div class="vLineLast">버튼4</div></div>
+        </div>
+    </div>
+
+    <div data-role="page" id="page4">
+        <div data-role="header">
+            <a data-rel="back" data-icon="carat-l" class="ui-btn-left">이전</a>
+            <h1>스마트페이지 링크 처리법</h1>
+            <a href="#home" data-icon="home" class="ui-btn-right">홈으로</a>
+        </div>
+        <div data-role="content">
+            <h2>네번째 페이지</h2>
+        </div>
+        <div data-role="footer" data-fullscreen="true" data-position="fixed">
+            <div data-role="navbar" id="navBar">
+                <ul>
+                    <li><a onclick="btnFnc(1)" class="ui-btn-active"><i class="fas fa-home"></i></a></li>
+                    <li><a onclick="btnFnc(2)">버튼2</a></li>
+                    <li><a onclick="btnFnc(3)">버튼3</a></li>
+                    <li><a onclick="btnFnc(4)">버튼4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

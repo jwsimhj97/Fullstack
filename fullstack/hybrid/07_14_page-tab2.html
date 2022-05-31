@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+
+    <!-- 
+        탭 기본 선택 변경 위해 처리할 것
+        아리 파일 다운로드 후 주석 처리할 것  min.js가 아닌 .js로 받기(파일 수정하기 편한 것으로)
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+     -->
+   
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    
+    <style>
+        div#tab1, div#tab2, div#tab3 {text-align: center;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#tab2").show();
+            $("#tabs").siblings().not("#nav").hide();
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>header영역</h1>
+        </div>
+        <div data-role="content">
+            <p>content영역</p>
+            <div data-role="tabs">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tab1" class="ui-btn-active">그림1</a></li>
+                        <li><a href="#tab2">그림2</a></li>
+                        <li><a href="#tab3">그림3</a></li>
+                    </ul>
+                </div>
+
+                <div id="tab1">
+                    <h5>첫번째 그림</h5>
+                    <img src="img/flower1.jpg" alt="">
+                </div>
+                <div id="tab2">
+                    <h5>두번째 그림</h5>
+                    <img src="img/flower2.jpg" alt="">
+                </div>
+                <div id="tab3">
+                    <h5>세번째 그림</h5>
+                    <img src="img/flower3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+        <h4>footer영역</h4>
+    </div>
+
+</body>
+</html>
+

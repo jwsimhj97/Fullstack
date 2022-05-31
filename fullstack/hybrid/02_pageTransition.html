@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통로직</title>
+    <!-- 제이쿼리 라이브러리(js) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 제이쿼리 모바일 라이브러리(css, js) -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <!-- 1페이지 시작 -->
+    <div data-role="page" id="page1" data-title="첫번째페이지">
+        <div data-role="header"><h1>첫번째 페이지</h1></div>
+        <div data-role="content">
+            <a href="#page2">페이지2</a><br>
+            <a href="#page3">페이지3</a>
+        </div>
+        <div data-role="footer"><h4>내부링크방식</h4></div>
+    </div>
+
+    <!-- 2페이지 시작 -->
+    <div data-role="page" id="page2">
+        <div data-role="header"><h1>두번째 페이지</h1></div>
+        <div data-role="content">
+            <p>페이지 전환 애니메이션 효과</p>
+            <!-- 
+                data-rel="back" 속성은 이전 페이지로 돌아가는 것이므로 href="#somepage" 속성은 무시된다. 없어도 실행된다.
+                이전 페이지의 상태(스크롤 위치 등)를 기억하고 그대로 되돌린다.
+                data-transition 속성 : 페이지 전환효과 
+            -->
+            <a href="#page3" data-rel="back">이전페이지로</a><br>
+            <a href="" data-rel="back">이전페이지로</a><br>
+            <a href="#page3">기본 전환효과 적용</a><br>
+            <a href="#page3" data-transition="slide">왼쪽으로 수평이동</a><br>
+            <a href="#page3" data-transition="slideup">위쪽으로 수직이동</a><br>
+            <a href="#page3" data-transition="slidedown">아래쪽으로 수직이동</a><br>
+            <a href="#page3" data-transition="flip">페이지 회전(페이지중앙 Y축 기준)</a><br>
+            <a href="#page3" data-transition="fade">서서히 나타남</a><br>
+            <a href="#page3" data-transition="pop">페이지  확장(화면 중앙에서 확대됨)</a><br>
+            <a href="#page3" data-transition="turn">페이지 뒤집기</a><br>
+            <a href="#page3" data-transition="flow">페이지 축소 후 좌우이동</a><br>
+            <a href="#page3" data-transition="none">전환효과 없음</a><br>
+        </div>
+        <div data-role="footer"><h4>내부링크방식</h4></div>
+    </div>
+
+    <!-- 3페이지 시작 -->
+    <div data-role="page" id="page3" data-title="세번째페이지">
+        <div data-role="header"><h1></h1></div>
+        <div data-role="content">
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            <a href="#page1">페이지1</a><br>
+            <a href="#page2">페이지2</a><br>
+            <a href="#somepage" data-rel="back">이전페이지로</a><br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+            하하하<br>
+        </div>
+        <div data-role="footer"><h4>내부링크방식</h4></div>
+    </div>
+</body>
+</html>
+
